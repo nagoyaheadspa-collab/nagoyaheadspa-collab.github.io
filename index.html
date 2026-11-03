@@ -204,6 +204,14 @@ section{padding:88px 0;position:relative}
 .pay{margin-top:16px;background:var(--ink);color:#fff;border-radius:12px;padding:16px 22px;display:grid;grid-template-columns:auto 1fr;gap:14px;align-items:start;font-size:.9rem}
 .pay svg{width:26px;height:26px;color:#fff;margin-top:4px}
 
+/* voice（白・お客様の声） */
+.voices{display:grid;gap:16px}
+.voice{border:2px solid var(--ink);border-radius:20px;padding:26px 24px;display:grid;gap:12px;background:#fff}
+.voice .stars{color:var(--red);font-size:1.05rem;letter-spacing:.14em;line-height:1}
+.voice .stars small{font-family:var(--sans);color:var(--mute);font-size:.72rem;letter-spacing:.1em;margin-left:8px;font-weight:700}
+.voice p{font-size:.92rem;color:var(--ink-2);line-height:1.9}
+.voice .who{font-size:.8rem;color:var(--mute);font-weight:700;letter-spacing:.06em;text-align:right}
+.voice-note{text-align:center;margin-top:22px}
 /* flow（白） */
 .flow{display:grid;gap:0;counter-reset:step}
 .flow li{position:relative;padding:0 0 28px 64px;counter-increment:step}
@@ -278,6 +286,7 @@ footer small{display:block;margin-top:14px;font-family:var(--en);letter-spacing:
 @media(min-width:760px){
   .sp{display:none}
   .courses{grid-template-columns:repeat(3,1fr)}
+  .voices{grid-template-columns:repeat(3,1fr);align-items:start}
   .extras{grid-template-columns:1fr 1fr}
   .extra>div{grid-template-columns:1fr auto;gap:4px 16px}
   .cols{grid-template-columns:1fr 1fr}
@@ -316,7 +325,7 @@ footer small{display:block;margin-top:14px;font-family:var(--en);letter-spacing:
 <div class="wrap">
 <a class="brand" href="#"><b>名古屋のドライヘッドスパ</b></a>
 <nav class="nav" aria-label="ページ内">
-<a href="#about">特徴</a><a href="#menu">メニュー</a><a href="#flow">流れ</a><a href="#info">当日について</a><a href="#access">アクセス</a><a href="#faq">Q&amp;A</a>
+<a href="#about">特徴</a><a href="#menu">メニュー</a><a href="#voice">お客様の声</a><a href="#flow">流れ</a><a href="#info">当日について</a><a href="#access">アクセス</a><a href="#faq">Q&amp;A</a>
 </nav>
 <a class="btn sm" href="https://lin.ee/qxIkHOR" target="_blank" rel="noopener">LINEで予約・相談</a>
 <button class="burger" type="button" aria-controls="drawer" aria-expanded="false" aria-label="メニューを開く"><i></i></button>
@@ -326,6 +335,7 @@ footer small{display:block;margin-top:14px;font-family:var(--en);letter-spacing:
 <nav class="drawer" id="drawer" aria-label="メニュー">
 <a href="#about">特徴<span class="en">About</span></a>
 <a href="#menu">メニューと料金<span class="en">Menu</span></a>
+<a href="#voice">お客様の声<span class="en">Voice</span></a>
 <a href="#flow">ご予約の流れ<span class="en">Flow</span></a>
 <a href="#info">当日・キャンセル<span class="en">Info</span></a>
 <a href="#access">アクセス<span class="en">Access</span></a>
@@ -417,6 +427,18 @@ footer small{display:block;margin-top:14px;font-family:var(--en);letter-spacing:
 </div>
 <div class="pay"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="2"/><path d="M3 10h18M7 14h3"/></svg><p>お支払いは<b>事前会計のみ</b>です（Squareのキャッシュレス決済）。お支払い方法は、ご予約時にLINEでご案内します。</p></div>
 <div class="cta-block"><a class="btn line" href="https://lin.ee/qxIkHOR" target="_blank" rel="noopener">このメニューで予約する</a><p>コースに迷ったら、LINEでご相談ください</p></div>
+</div>
+</section>
+
+<section id="voice" class="voice-sec">
+<div class="wrap">
+<div class="head"><h2>お客様の声</h2></div>
+<div class="voices">
+<div class="voice"><div class="stars">★★★★★<small>90分コース</small></div><p>名古屋駅近くの完全個室で90分コースを受けました。水もオイルも使わないので服のまま受けられ、終わった後にメイクや髪を直さなくていいのが楽でした。始める前に体調や力加減の好みを丁寧に聞いてもらえて安心できました。途中から記憶がないくらい、ゆったり過ごせました。仕事帰りにまた寄りたいです。</p><p class="who">名古屋駅でご利用</p></div>
+<div class="voice"><div class="stars">★★★★★<small>はじめての方</small></div><p>ドライヘッドスパは初めてで少し緊張していましたが、最初のカウンセリングで体調や普段の生活のことまでゆっくり聞いてくださり、すぐに落ち着けました。担当のRyokaさんは看護師さんとのことで、話し方も手つきもとても丁寧です。肩や首から始まって頭へ進む流れで、気づいたらうとうとしていました。個室は間接照明で静かで、人目を気にせず過ごせます。予約も支払いもLINEで前もって済むので、終わったらそのまま帰れるのも良かったです。自分へのご褒美にも、家族へのプレゼントにも良いと思います。</p><p class="who">完全個室でご利用</p></div>
+<div class="voice"><div class="stars">★★★★★<small>90分＋ホットアイマスク</small></div><p>デスクワークで一日中パソコンを見ているので、目元まで仕上げてくれる90分コースにホットアイマスクを付けて受けました。温かいアイマスクがとても気持ちよく、施術中は本当に何も考えずに休めました。最後にお水をいただいて、そのまま栄で買い物をして帰りました。駅から歩いて行ける場所なのと、日程変更ならキャンセル料がかからないので、忙しくても予約しやすいです。リピート確定です。</p><p class="who">栄でご利用</p></div>
+</div>
+<p class="note voice-note">ご利用いただいたお客様の感想を、ご本人の了承を得て掲載しています。</p>
 </div>
 </section>
 
