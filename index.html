@@ -3,403 +3,435 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>名古屋・金山のヘッドスパ｜看護師のドライヘッドスパ（名古屋駅・栄・金山の完全個室）</title>
-<meta name="description" content="名古屋・金山でヘッドスパをお探しの方へ。名古屋駅・栄・金山から徒歩圏内の完全個室で、看護師が体調を伺ってから行うドライヘッドスパです。60分12,000円〜、足湯つき。髪も服も濡れません。ご予約はLINEで。">
+<title>名古屋駅・栄・金山のヘッドスパ｜看護師のドライヘッドスパ（完全個室）</title>
+<meta name="description" content="名古屋駅・栄・金山から徒歩圏内の完全個室で、看護師が体調を伺ってから行うドライヘッドスパです。60分12,000円〜。髪も服も濡れません。ご予約はLINEで。">
 <meta name="robots" content="index,follow">
 <link rel="canonical" href="https://nagoyaheadspa-collab.github.io/">
 <meta property="og:url" content="https://nagoyaheadspa-collab.github.io/">
-<meta name="theme-color" content="#fdf9f7">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="ja_JP">
-<meta property="og:title" content="名古屋・金山のヘッドスパ｜看護師のドライヘッドスパ">
-<meta property="og:description" content="名古屋駅・栄・金山から徒歩圏内の完全個室で、看護師が行うドライヘッドスパ。60分12,000円〜、足湯つき。">
-<meta name="twitter:card" content="summary">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23a8456a'/%3E%3Cpath d='M20 38c4-10 20-10 24 0' fill='none' stroke='white' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E">
+<meta property="og:title" content="名古屋駅・栄・金山のヘッドスパ｜看護師のドライヘッドスパ">
+<meta property="og:description" content="名古屋駅・栄・金山から徒歩圏内の完全個室で、看護師が行うドライヘッドスパ。60分12,000円〜。">
+<meta property="og:image" content="https://nagoyaheadspa-collab.github.io/images/spa-wide.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%238d5560'/%3E%3Cpath d='M20 38c4-10 20-10 24 0' fill='none' stroke='white' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;1,600&family=Shippori+Mincho:wght@500;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
-<script>document.documentElement.classList.add('js')</script>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Shippori+Mincho:wght@500;600&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
-:root{color-scheme:light;--bg:#fdf9f7;--bg2:#f9f0ee;--white:#fff;--ink:#4a3b37;--sub:#76655f;--mute:#958580;--line:#efe3df;--rose:#b26478;--rose-d:#9a5266;--rose-l:#e3b5c0;--pink:#f0c4ce;--pink-d:#e8aebb;--band:#f6e1e5;--brown:#a88468}
+/* ====== tokens ====== */
+:root{
+  color-scheme:light;
+  --bg:#f8f4ef;        /* 和紙のような生成り */
+  --bg-deep:#f1eae2;   /* ひとつ濃い帯 */
+  --white:#fffdfa;
+  --ink:#2e2724;
+  --ink-2:#5a4f4a;
+  --mute:#8c7f78;
+  --line:#e4dad1;
+  --rose:#8d5560;      /* 主役。くすんだ小豆色 */
+  --rose-deep:#6f4049;
+  --rose-soft:#eed9db;
+  --gold:#b89a6a;      /* 添えもの。英字とアクセントの線だけに使う */
+  --max:1160px;
+  --gutter:clamp(20px,4vw,48px);
+  --serif:"Shippori Mincho","Hiragino Mincho ProN","Yu Mincho",serif;
+  --sans:"Noto Sans JP","Hiragino Sans",sans-serif;
+  --en:"Cormorant Garamond",Georgia,serif;
+}
 *,*::before,*::after{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:72px;background:var(--bg)}
-body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/2 "Noto Sans JP",sans-serif;padding-bottom:calc(60px + env(safe-area-inset-bottom,0px));-webkit-font-smoothing:antialiased}
-h1,h2,h3{font-family:"Shippori Mincho",serif;font-weight:600;line-height:1.55;margin:0;letter-spacing:.06em;word-break:auto-phrase;text-wrap:balance}
-p,li,dd,summary{line-break:strict;text-wrap:pretty}
-p{margin:0 0 14px}
+html{scroll-behavior:smooth;scroll-padding-top:84px;background:var(--bg)}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 15.5px/2 var(--sans);-webkit-font-smoothing:antialiased;letter-spacing:.02em;padding-bottom:calc(66px + env(safe-area-inset-bottom,0px))}
+h1,h2,h3{font-family:var(--serif);font-weight:600;margin:0;line-height:1.5;letter-spacing:.06em;word-break:auto-phrase;text-wrap:balance}
+p{margin:0}
+p+p{margin-top:1em}
+ul,ol{margin:0;padding:0;list-style:none}
 a{color:var(--rose)}
-a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var(--rose);outline-offset:3px}
-img{max-width:100%;display:block}
-.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
-.en{font-family:"Cormorant Garamond",serif;font-weight:600;letter-spacing:.08em;color:var(--brown);font-size:1.05rem;display:block;margin-bottom:6px}
-.note{font-size:.84rem;color:var(--mute)}
+img{max-width:100%;display:block;height:auto}
+strong,b{font-weight:700}
+:focus-visible{outline:2px solid var(--rose);outline-offset:3px}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--gutter)}
+.en{font-family:var(--en);font-weight:500;font-style:italic;color:var(--gold);letter-spacing:.14em;font-size:1rem;display:block;line-height:1}
+.note{font-size:.84rem;color:var(--mute);line-height:1.9}
 
-/* ---------- header ---------- */
-.top{position:sticky;top:0;z-index:50;background:var(--white);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px)}
-.top .wrap{display:flex;align-items:center;gap:16px;height:64px}
-.brand{display:block;text-decoration:none;color:var(--ink);margin-right:auto;min-width:0}
-.brand .mark{display:none}
-.brand b{display:block;font-family:"Shippori Mincho",serif;font-weight:600;font-size:1.05rem;letter-spacing:.08em;line-height:1.3;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.brand small{display:block;font-size:.68rem;color:var(--mute);letter-spacing:.12em;line-height:1.5}
-.nav{display:none}
-.nav a{color:var(--ink);text-decoration:none;font-family:"Shippori Mincho",serif;font-size:.92rem;letter-spacing:.06em;white-space:nowrap}
-.nav a:hover{color:var(--rose)}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:14px;background:var(--pink);color:var(--ink);text-decoration:none;font-family:"Shippori Mincho",serif;font-weight:600;letter-spacing:.1em;padding:15px 30px;border-radius:2px;border:1px solid var(--pink);font-size:1rem;transition:background .2s,border-color .2s}
-.btn::after{content:"";width:16px;height:1px;background:currentColor;flex:none}
-.btn:hover{background:var(--pink-d);border-color:var(--pink-d)}
-.btn.ghost{background:var(--white);color:var(--ink);border-color:var(--rose-l)}
-.btn.ghost:hover{background:var(--bg2)}
-.btn.small{padding:9px 18px;font-size:.88rem}
-.btn.small::after{display:none}
-.top .btn.small{display:none}
-.burger{flex:none;width:44px;height:44px;border:1px solid var(--line);background:var(--white);display:grid;place-items:center;cursor:pointer;color:var(--ink);border-radius:2px}
-.burger span,.burger span::before,.burger span::after{display:block;width:20px;height:1px;background:currentColor;position:relative;transition:transform .25s,background .25s}
-.burger span::before,.burger span::after{content:"";position:absolute;left:0}
-.burger span::before{top:-6px}.burger span::after{top:6px}
-.menu-open .burger span{background:transparent}
-.menu-open .burger span::before{transform:translateY(6px) rotate(45deg)}
-.menu-open .burger span::after{transform:translateY(-6px) rotate(-45deg)}
-.drawer{position:fixed;inset:0;z-index:40;background:var(--bg);padding:96px 28px 40px;display:flex;flex-direction:column;opacity:0;visibility:hidden;transition:opacity .25s,visibility .25s}
+/* ====== buttons ====== */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:12px;min-height:54px;padding:0 30px;border-radius:999px;background:var(--rose);color:#fff;text-decoration:none;font-weight:500;letter-spacing:.08em;font-size:.95rem;border:1px solid var(--rose);transition:background .25s,border-color .25s,transform .25s;white-space:nowrap}
+.btn:hover{background:var(--rose-deep);border-color:var(--rose-deep);transform:translateY(-1px)}
+.btn svg{width:20px;height:20px;flex:none}
+.btn.line{background:#06c755;border-color:#06c755}
+.btn.line:hover{background:#05b24c;border-color:#05b24c}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--ink)}
+.btn.ghost:hover{background:var(--ink);color:var(--bg)}
+.btn.sm{min-height:42px;padding:0 20px;font-size:.86rem}
+
+/* ====== header ====== */
+.top{position:sticky;top:0;z-index:40;background:rgba(248,244,239,.86);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px)}
+.top .wrap{display:flex;align-items:center;gap:20px;height:68px}
+.brand{text-decoration:none;color:var(--ink);margin-right:auto;min-width:0;display:flex;flex-direction:column;line-height:1.3}
+.brand b{font-family:var(--serif);font-weight:600;font-size:1.02rem;letter-spacing:.1em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.brand small{font-size:.66rem;color:var(--mute);letter-spacing:.2em}
+.nav{display:none;gap:28px}
+.nav a{color:var(--ink);text-decoration:none;font-size:.88rem;letter-spacing:.1em;position:relative;padding:4px 0}
+.nav a::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:var(--rose);transform:scaleX(0);transform-origin:left;transition:transform .25s}
+.nav a:hover::after{transform:scaleX(1)}
+.top .btn{display:none}
+.burger{width:44px;height:44px;border:1px solid var(--line);background:var(--white);border-radius:50%;display:grid;place-items:center;cursor:pointer;color:var(--ink);padding:0}
+.burger i{display:block;width:18px;height:1.5px;background:currentColor;position:relative;transition:background .2s}
+.burger i::before,.burger i::after{content:"";position:absolute;left:0;width:100%;height:1.5px;background:currentColor;transition:transform .25s}
+.burger i::before{top:-6px}.burger i::after{top:6px}
+.menu-open .burger i{background:transparent}
+.menu-open .burger i::before{transform:translateY(6px) rotate(45deg)}
+.menu-open .burger i::after{transform:translateY(-6px) rotate(-45deg)}
+.drawer{position:fixed;inset:0;z-index:30;background:var(--bg);padding:110px var(--gutter) 40px;display:flex;flex-direction:column;opacity:0;visibility:hidden;transition:opacity .25s,visibility .25s}
 .menu-open .drawer{opacity:1;visibility:visible}
-.drawer a{color:var(--ink);text-decoration:none;font-family:"Shippori Mincho",serif;font-size:1.15rem;letter-spacing:.06em;padding:16px 0;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:baseline}
-.drawer a small{font-family:"Cormorant Garamond",serif;color:var(--brown);font-size:.9rem;letter-spacing:.06em}
-.drawer a.btn{margin-top:28px;border-bottom:1px solid var(--pink);justify-content:center;color:var(--ink);font-size:1rem}
 .menu-open{overflow:hidden}
-.menu-open .bar{opacity:0;pointer-events:none}
+.drawer a{color:var(--ink);text-decoration:none;font-family:var(--serif);font-size:1.3rem;letter-spacing:.1em;padding:16px 0;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:baseline}
+.drawer a .en{font-size:.85rem;letter-spacing:.2em;font-style:normal}
+.drawer .btn{margin-top:28px;font-family:var(--sans);font-size:1rem;border-bottom:0;justify-content:center;color:#fff}
 
-/* ---------- hero ---------- */
-.hero{display:grid;background:var(--white);padding:0}
-.hero-media{aspect-ratio:4/3;overflow:hidden}
-.hero-photo{width:100%;height:100%;object-fit:cover;object-position:62% 40%}
-.hero-text{padding:40px 20px 52px}
-.hero-text .inner{max-width:520px}
-.kw{display:block;font-family:"Noto Sans JP",sans-serif;font-size:.8rem;font-weight:500;letter-spacing:.08em;color:var(--rose);margin-bottom:16px}
-.hero h1{font-size:clamp(1.9rem,7.4vw,3rem);line-height:1.5}
+/* ====== hero ====== */
+.hero{position:relative;overflow:hidden;padding:0}
+.hero .wrap{display:grid;gap:28px;padding-top:28px;padding-bottom:56px}
+.hero-photo{position:relative;border-radius:200px 200px 24px 24px;overflow:hidden;aspect-ratio:4/5;max-height:58svh;background:var(--bg-deep)}
+.hero-photo img{width:100%;height:100%;object-fit:cover;object-position:62% 30%}
+.hero-photo::after{content:"";position:absolute;inset:0;box-shadow:inset 0 0 0 1px rgba(255,255,255,.35);border-radius:inherit;pointer-events:none}
+.hero .tag{display:inline-flex;align-items:center;gap:10px;font-size:.78rem;letter-spacing:.14em;color:var(--rose);margin-bottom:18px}
+.hero .tag::before{content:"";width:28px;height:1px;background:var(--rose)}
+.hero h1{font-size:clamp(2rem,7.4vw,3.6rem);line-height:1.4;letter-spacing:.08em}
 .hero h1 em{font-style:normal;color:var(--rose)}
-.hero .lead{color:var(--sub);margin:22px 0 0}
-.badges{display:flex;flex-wrap:wrap;gap:6px 18px;list-style:none;padding:0;margin:20px 0 0;font-size:.86rem;color:var(--ink)}
-.badges li::before{content:"";display:inline-block;width:5px;height:5px;background:var(--pink-d);margin-right:8px;vertical-align:3px}
-.price{margin:22px 0 0;color:var(--sub);font-size:.92rem;border-top:1px solid var(--line);padding-top:18px}
-.price b{font-family:"Shippori Mincho",serif;font-size:1.7rem;color:var(--ink);margin:0 3px;font-weight:600}
-.hero-cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
-.hero-cta .btn{flex:1 1 auto;white-space:nowrap}
-.hero .hint{font-size:.8rem;color:var(--mute);margin:12px 0 0}
-.facts{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--bg)}
-.facts div{padding:18px 8px;text-align:center}
-.facts div+div{border-left:1px solid var(--line)}
-.facts dt{font-size:.72rem;color:var(--mute);letter-spacing:.1em}
-.facts dd{margin:2px 0 0;font-family:"Shippori Mincho",serif;font-size:.84rem;line-height:1.6}
+.hero .lead{margin-top:22px;color:var(--ink-2);max-width:30em;line-height:2.1}
+.hero .points{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:22px;font-size:.86rem;color:var(--ink-2)}
+.hero .points li{display:flex;align-items:center;gap:8px}
+.hero .points li::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--gold)}
+.hero .price{margin-top:26px;display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;color:var(--ink-2);font-size:.9rem}
+.hero .price b{font-family:var(--serif);font-weight:600;font-size:2.4rem;color:var(--ink);letter-spacing:.02em;line-height:1}
+.hero .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.hero .cta .btn{flex:1 1 240px}
+.hero .hint{margin-top:14px;font-size:.8rem;color:var(--mute)}
+.vtext{display:none}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
 
-/* ---------- sections ---------- */
+/* facts */
+.facts{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--white);margin:0}
+.facts .wrap{display:grid;grid-template-columns:repeat(2,1fr)}
+.facts div{padding:18px 8px;display:flex;flex-direction:column;gap:2px;border-bottom:1px solid var(--line)}
+.facts dt{font-size:.72rem;letter-spacing:.2em;color:var(--mute)}
+.facts dd{margin:0;font-family:var(--serif);font-size:1.05rem;letter-spacing:.06em}
+
+/* ====== sections ====== */
 section{padding:88px 0}
-.alt{background:var(--bg2)}
-.band{background:var(--band);color:var(--ink)}
-.band .en{color:var(--rose)}
+.deep{background:var(--bg-deep)}
 .head{margin-bottom:40px}
-.head h2{font-size:clamp(1.5rem,5vw,2.2rem)}
-.head h2::after{content:"";display:block;width:36px;height:1px;background:var(--pink-d);margin-top:18px}
-.band .head h2::after{background:var(--rose)}
-.head p{color:var(--sub);margin:18px 0 0;max-width:36em}
-.split{display:grid;gap:12px}
+.head h2{font-size:clamp(1.6rem,4.6vw,2.3rem);margin-top:12px}
+.head .lead{margin-top:18px;color:var(--ink-2);max-width:38em}
+.head.center{text-align:center}
+.head.center .lead{margin-inline:auto}
 
-.features{display:grid;gap:28px}
-.feat{display:flex;flex-direction:column}
-/* 写真を入れるときは .art の中に <img src="写真.jpg" alt="…"> を入れてください */
-.art{aspect-ratio:5/2;position:relative;display:grid;place-items:center;overflow:hidden;background:var(--bg)}
-.art img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.art svg{width:44px;height:44px;color:var(--rose-l)}
-.feat .body{padding:20px 0 0}
-.feat h3{font-size:1.1rem;display:flex;gap:12px;align-items:baseline}
-.feat h3 i{font-style:normal;font-family:"Cormorant Garamond",serif;font-size:1.5rem;color:var(--rose);font-weight:600;flex:none}
-.feat p{color:var(--sub);font-size:.92rem;margin:10px 0 0}
+/* about */
+.about .wrap{display:grid;gap:40px}
+.about-photo{position:relative;border-radius:24px;overflow:hidden;aspect-ratio:3/4;max-height:560px;margin:0}
+.about-photo img{width:100%;height:100%;object-fit:cover;object-position:50% 20%}
+.about-photo figcaption{position:absolute;left:18px;bottom:18px;background:rgba(255,253,250,.9);padding:10px 16px;border-radius:12px;font-size:.78rem;letter-spacing:.08em;color:var(--ink-2)}
+.reasons{display:grid;gap:0}
+.reasons li{display:grid;grid-template-columns:60px 1fr;gap:16px;padding:26px 0;border-top:1px solid var(--line)}
+.reasons li:last-child{border-bottom:1px solid var(--line)}
+.reasons .n{font-family:var(--en);font-style:italic;font-size:2.1rem;color:var(--gold);line-height:1;padding-top:4px}
+.reasons h3{font-size:1.1rem;letter-spacing:.08em}
+.reasons p{margin-top:8px;color:var(--ink-2);font-size:.92rem}
+.about .note{margin-top:28px}
 
-.staff{display:grid;gap:24px;align-items:center}
-/* 写真を入れるときは .portrait の中に <img src="写真.jpg" alt="担当 Ryoka"> を入れてください */
-.portrait{aspect-ratio:1;max-width:180px;width:100%;border-radius:50%;margin:0 auto;position:relative;overflow:hidden;background:var(--bg2)}
-.portrait img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.portrait span{position:absolute;inset:0;display:grid;place-items:center;font-family:"Cormorant Garamond",serif;font-size:2.4rem;color:var(--rose-l)}
-.staff h3{font-size:1.5rem}
-.staff h3 small{display:block;font-family:"Noto Sans JP",sans-serif;font-size:.78rem;color:var(--mute);letter-spacing:.14em;font-weight:400;margin-bottom:2px}
-.staff ul{list-style:none;padding:0;margin:14px 0 0;display:flex;flex-wrap:wrap;gap:6px 18px;font-size:.86rem;color:var(--sub)}
-.staff li::before{content:"";display:inline-block;width:5px;height:5px;background:var(--rose-l);margin-right:8px;vertical-align:3px}
-.staff p{color:var(--sub);margin:14px 0 0}
+/* staff */
+.staff{background:var(--white);border:1px solid var(--line);border-radius:28px;padding:36px 28px;display:grid;gap:28px;align-items:center}
+.portrait{width:170px;aspect-ratio:1;border-radius:50%;overflow:hidden;margin:0 auto;border:1px solid var(--line);background:var(--bg-deep)}
+.portrait img{width:100%;height:100%;object-fit:cover;object-position:50% 4%;transform:scale(1.18);transform-origin:50% 16%}
+.staff h3{font-size:2rem;letter-spacing:.14em;display:flex;align-items:baseline;gap:14px}
+.staff h3 small{font-family:var(--sans);font-size:.78rem;letter-spacing:.2em;color:var(--mute);font-weight:400}
+.cred{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 18px}
+.cred li{font-size:.8rem;letter-spacing:.06em;color:var(--rose);border:1px solid var(--rose-soft);background:var(--rose-soft);padding:5px 14px;border-radius:999px}
+.staff p{color:var(--ink-2);font-size:.95rem}
 
-/* for you band */
-.band .box{background:transparent;border:0;padding:0}
-.band .box ul{list-style:none;padding:0;margin:0;color:var(--ink);font-size:1rem;display:grid;gap:0}
-.band .box li{padding:16px 0 16px 30px;border-bottom:1px solid rgba(178,100,120,.2);position:relative;margin:0}
-.band .box li::before{content:"";position:absolute;left:4px;top:26px;width:12px;height:6px;border-left:1.5px solid var(--rose);border-bottom:1.5px solid var(--rose);transform:rotate(-45deg)}
-.band .note{color:var(--sub)}
+/* for you */
+.for ul{display:grid;gap:12px;max-width:720px;margin:0 auto}
+.for li{background:var(--white);border:1px solid var(--line);border-radius:16px;padding:18px 22px 18px 54px;position:relative;font-size:.95rem}
+.for li::before{content:"";position:absolute;left:22px;top:50%;width:16px;height:16px;transform:translateY(-50%);border-radius:50%;border:1px solid var(--gold);background:radial-gradient(circle,var(--gold) 0 3px,transparent 3.5px)}
+.for .note{text-align:center;margin-top:22px}
 
 /* menu */
 .courses{display:grid;gap:16px}
-.course{position:relative;background:var(--white);border:1px solid var(--line);padding:28px 24px}
-.course.pick{border-top:3px solid var(--pink-d)}
-.course .tag{position:absolute;top:0;right:0;background:var(--pink);color:var(--ink);font-size:.72rem;padding:3px 12px;letter-spacing:.1em}
-.course .time{font-family:"Shippori Mincho",serif;font-size:2.4rem;line-height:1;font-weight:600}
-.course .time small{font-size:.95rem;color:var(--sub);margin-left:4px;font-weight:500}
-.course .yen{font-family:"Shippori Mincho",serif;font-size:1.4rem;margin:14px 0 0;color:var(--rose);font-weight:600}
-.course .yen small{font-family:"Noto Sans JP",sans-serif;font-size:.76rem;color:var(--mute);margin-left:4px;font-weight:400}
-.course p{color:var(--sub);font-size:.9rem;margin:14px 0 0;padding-top:14px;border-top:1px solid var(--line)}
-.extras{margin-top:24px;border-top:1px solid var(--rose-l)}
-.extra{display:grid;grid-template-columns:1fr auto;gap:4px 16px;padding:18px 0;border-bottom:1px solid var(--line)}
-.extra b{font-family:"Shippori Mincho",serif;font-weight:600}
-.extra b small{display:inline-block;margin-left:10px;font-family:"Noto Sans JP",sans-serif;font-size:.72rem;font-weight:400;color:var(--mute);vertical-align:1px;white-space:nowrap}
-.extra .y{font-family:"Shippori Mincho",serif;font-weight:600;white-space:nowrap}
-.extra p{grid-column:1/-1;color:var(--sub);font-size:.9rem;margin:0}
-.cta{text-align:center;margin-top:40px}
-.cta .btn{width:100%;max-width:360px}
-.cta p{font-size:.84rem;color:var(--mute);margin:12px 0 0}
+.course{position:relative;background:var(--white);border:1px solid var(--line);border-radius:22px;padding:30px 28px;display:grid;gap:6px;transition:transform .25s,box-shadow .25s}
+.course:hover{transform:translateY(-3px);box-shadow:0 18px 40px -24px rgba(46,39,36,.35)}
+.course .en{font-size:.86rem;letter-spacing:.2em;color:var(--mute);font-style:normal}
+.course .time{font-family:var(--serif);font-size:2.6rem;letter-spacing:.04em;line-height:1.1}
+.course .time small{font-size:1rem;margin-left:4px;letter-spacing:.1em}
+.course .yen{font-family:var(--serif);font-size:1.45rem;color:var(--rose);letter-spacing:.04em;margin-top:6px}
+.course .yen small{font-family:var(--sans);font-size:.72rem;color:var(--mute);margin-left:8px;letter-spacing:.1em}
+.course p{margin-top:12px;color:var(--ink-2);font-size:.92rem;line-height:1.9}
+.course.pick{border-color:var(--rose);background:linear-gradient(180deg,#fff 0%,#fbf2f2 100%)}
+.course .tag{position:absolute;top:-13px;left:24px;background:var(--rose);color:#fff;font-size:.72rem;letter-spacing:.18em;padding:4px 14px;border-radius:999px}
+.extras{margin-top:28px;display:grid;gap:12px}
+.extra{border:1px solid var(--line);border-radius:16px;padding:18px 22px;display:grid;grid-template-columns:1fr auto;gap:4px 16px;align-items:baseline}
+.extra b{font-family:var(--serif);font-weight:600;font-size:1.02rem;letter-spacing:.08em}
+.extra b small{font-family:var(--sans);font-size:.7rem;color:var(--mute);margin-left:8px;letter-spacing:.14em;font-weight:400}
+.extra .y{font-family:var(--serif);color:var(--rose);font-size:1.05rem;white-space:nowrap}
+.extra p{grid-column:1/-1;font-size:.88rem;color:var(--ink-2);line-height:1.8}
+.pay{margin-top:28px;background:var(--white);border:1px solid var(--line);border-radius:16px;padding:18px 22px;display:grid;grid-template-columns:auto 1fr;gap:14px;align-items:start;font-size:.9rem;color:var(--ink-2)}
+.pay svg{width:26px;height:26px;color:var(--rose);margin-top:4px}
+.cta-block{text-align:center;margin-top:40px}
+.cta-block .btn{min-width:min(100%,340px)}
+.cta-block p{margin-top:14px;font-size:.84rem;color:var(--mute)}
 
 /* flow */
-.flow{list-style:none;padding:0;margin:0;display:grid;gap:0;counter-reset:s;border-top:1px solid var(--line)}
-.flow li{counter-increment:s;padding:22px 0 22px 64px;position:relative;border-bottom:1px solid var(--line)}
-.flow li::before{content:counter(s,decimal-leading-zero);position:absolute;left:0;top:20px;font-family:"Cormorant Garamond",serif;font-size:1.9rem;line-height:1;color:var(--rose)}
-.flow b{display:block;font-family:"Shippori Mincho",serif;font-weight:600;font-size:1.05rem}
-.flow span{color:var(--sub);font-size:.92rem}
+.flow{display:grid;gap:0;counter-reset:step}
+.flow li{position:relative;padding:0 0 30px 56px;counter-increment:step}
+.flow li::before{content:counter(step,decimal-leading-zero);position:absolute;left:0;top:0;width:40px;height:40px;border-radius:50%;background:var(--white);border:1px solid var(--rose);color:var(--rose);font-family:var(--en);font-weight:600;font-size:1rem;display:grid;place-items:center;letter-spacing:.05em}
+.flow li::after{content:"";position:absolute;left:20px;top:44px;bottom:6px;width:1px;background:var(--line)}
+.flow li:last-child{padding-bottom:0}
+.flow li:last-child::after{display:none}
+.flow b{display:block;font-family:var(--serif);font-weight:600;font-size:1.12rem;letter-spacing:.08em;line-height:1.5;padding-top:6px}
+.flow span{display:block;color:var(--ink-2);font-size:.92rem;margin-top:8px}
 
 /* info */
-.box{background:var(--white);border:1px solid var(--line);padding:26px}
-.box h3{font-size:1.1rem;margin-bottom:12px}
-.box ul{margin:0;padding-left:1.2em;color:var(--sub);font-size:.92rem}
-.box li{margin-bottom:6px}
-.box li::marker{color:var(--rose-l)}
-.cancel{margin-top:20px}
-.cancel dl{display:grid;grid-template-columns:1fr auto;margin:0;border-top:1px solid var(--rose-l)}
-.cancel dt,.cancel dd{margin:0;padding:13px 4px;border-bottom:1px solid var(--line)}
-.cancel dd{font-family:"Shippori Mincho",serif;font-weight:600;color:var(--rose);white-space:nowrap;text-align:right}
-.cancel p{color:var(--sub);font-size:.88rem;margin:12px 0 0}
-.cancel p b{color:var(--ink)}
+.cols{display:grid;gap:16px}
+.box{background:var(--white);border:1px solid var(--line);border-radius:22px;padding:28px}
+.box h3{font-size:1.12rem;letter-spacing:.1em;padding-left:14px;border-left:2px solid var(--rose);line-height:1.4;margin-bottom:16px}
+.box ul li{position:relative;padding-left:18px;font-size:.92rem;color:var(--ink-2)}
+.box ul li+li{margin-top:8px}
+.box ul li::before{content:"";position:absolute;left:0;top:.95em;width:8px;height:1px;background:var(--gold)}
+.cancel{margin-top:16px}
+.cancel dl{display:grid;gap:0;margin:0 0 18px;border-top:1px solid var(--line)}
+.cancel .row{display:grid;grid-template-columns:1fr auto;gap:12px;padding:12px 0;border-bottom:1px solid var(--line);align-items:baseline}
+.cancel dt{font-size:.92rem;color:var(--ink-2)}
+.cancel dd{margin:0;font-family:var(--serif);font-size:1.08rem;letter-spacing:.06em}
+.cancel dd.free{color:var(--rose)}
+.cancel p{font-size:.9rem;color:var(--ink-2)}
 
 /* access */
-.places{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.place{padding:26px 6px;text-align:center}
-.place+.place{border-left:1px solid var(--line)}
-.place b{font-family:"Shippori Mincho",serif;font-weight:600;font-size:1.25rem;display:block;letter-spacing:.06em}
-.place span{color:var(--sub);font-size:.84rem}
+.places{display:grid;gap:12px;grid-template-columns:repeat(3,1fr)}
+.place{background:var(--white);border:1px solid var(--line);border-radius:18px;padding:22px 10px;text-align:center}
+.place b{display:block;font-family:var(--serif);font-weight:600;font-size:1.15rem;letter-spacing:.1em}
+.place span{display:block;font-size:.74rem;color:var(--mute);letter-spacing:.14em;margin-top:4px}
+.access .note{text-align:center;margin-top:20px}
 
 /* faq */
-details{border-bottom:1px solid var(--line)}
-details:first-of-type{border-top:1px solid var(--rose-l)}
-summary{cursor:pointer;font-weight:500;padding:20px 40px 20px 0;list-style:none;position:relative}
-summary::-webkit-details-marker{display:none}
-summary::before{content:"Q.";font-family:"Cormorant Garamond",serif;color:var(--rose);font-size:1.2rem;margin-right:10px;font-weight:600}
-summary::after{content:"+";position:absolute;right:4px;top:50%;transform:translateY(-50%);font-size:1.3rem;color:var(--rose);font-weight:300}
-details[open] summary::after{content:"−"}
-details p{margin:0;padding:0 0 22px 30px;color:var(--sub);font-size:.92rem}
+.faq .wrap{max-width:820px}
+.faq details{border-bottom:1px solid var(--line)}
+.faq details:first-of-type{border-top:1px solid var(--line)}
+.faq summary{list-style:none;cursor:pointer;padding:20px 44px 20px 0;position:relative;font-family:var(--serif);font-weight:600;font-size:1.02rem;letter-spacing:.06em;line-height:1.6}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::before,.faq summary::after{content:"";position:absolute;right:8px;top:50%;width:14px;height:1px;background:var(--rose);transition:transform .25s}
+.faq summary::after{transform:rotate(90deg)}
+.faq details[open] summary::after{transform:rotate(0)}
+.faq details p{padding:0 0 22px;color:var(--ink-2);font-size:.92rem}
 
-/* contact */
-.final{text-align:center}
-.final h2{font-size:clamp(1.5rem,5vw,2.2rem)}
-.final .lead{color:var(--sub);margin:16px auto 0;max-width:30em}
-.hours{display:inline-grid;grid-template-columns:auto auto;gap:6px 24px;text-align:left;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:16px 8px;margin:26px 0 0;font-size:.92rem}
-.hours dt{color:var(--mute)}
-.hours dd{margin:0}
+/* reserve */
+.reserve{background:var(--rose-deep);color:#fff;text-align:center}
+.reserve .en{color:#d9bfa0}
+.reserve h2{font-size:clamp(1.6rem,4.6vw,2.3rem);margin-top:12px;color:#fff}
+.reserve .lead{margin:18px auto 0;max-width:32em;color:rgba(255,255,255,.82)}
+.hours{display:flex;justify-content:center;gap:36px;margin:30px 0 0;flex-wrap:wrap}
+.hours div{display:flex;flex-direction:column;gap:4px}
+.hours dt{font-size:.72rem;letter-spacing:.22em;color:rgba(255,255,255,.65)}
+.hours dd{margin:0;font-family:var(--serif);font-size:1.5rem;letter-spacing:.06em}
+.reserve .cta-block{margin-top:34px}
+.reserve .cta-block p{color:rgba(255,255,255,.7)}
 
-footer{padding:36px 0 40px;font-size:.78rem;color:var(--sub);text-align:center;background:var(--bg2);border-top:1px solid var(--line)}
-footer span{display:inline-block;margin:0 .7em}
+footer{padding:36px 0 28px;text-align:center;font-size:.78rem;color:var(--mute);letter-spacing:.08em}
+footer span{display:inline-block;margin:0 .8em}
+footer small{display:block;margin-top:10px;font-family:var(--en);letter-spacing:.14em}
 
-/* fixed bar (phones) */
-.bar{position:fixed;left:0;right:0;bottom:0;z-index:45;display:grid;grid-template-columns:1fr 1fr 1.6fr;background:var(--white);border-top:1px solid var(--line);padding-bottom:env(safe-area-inset-bottom,0px)}
-.bar a{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:9px 6px;text-decoration:none;color:var(--ink);font-family:"Shippori Mincho",serif;font-weight:600;font-size:.88rem;line-height:1.4;letter-spacing:.04em}
-.bar a small{font-family:"Noto Sans JP",sans-serif;font-weight:400;font-size:.62rem;color:var(--mute)}
-.bar a+a{border-left:1px solid var(--line)}
-.bar a.main{background:var(--pink);color:var(--ink);border-left:0}
-.bar a.main small{color:var(--sub)}
+/* mobile bottom bar */
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:35;display:grid;grid-template-columns:1fr 1fr 1.6fr;background:rgba(255,253,250,.95);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-top:1px solid var(--line);padding-bottom:env(safe-area-inset-bottom,0px)}
+.bar a{text-decoration:none;color:var(--ink);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px;height:62px;font-size:.78rem;letter-spacing:.1em;border-right:1px solid var(--line)}
+.bar a small{font-family:var(--en);font-size:.62rem;color:var(--mute);letter-spacing:.18em;font-style:italic}
+.bar a.main{background:#06c755;color:#fff;border:0;font-weight:500;font-size:.9rem}
+.bar a.main small{color:rgba(255,255,255,.85)}
+.menu-open .bar{opacity:0;pointer-events:none}
 
-/* reveal */
-.js .rv{opacity:0;transform:translateY(10px);transition:opacity .7s ease,transform .7s ease}
-.js .rv.in{opacity:1;transform:none}
-
-@media (min-width:600px){.features{grid-template-columns:1fr 1fr}.art{aspect-ratio:3/2}.facts dd{font-size:.95rem}}
-@media (min-width:900px){
-  body{padding-bottom:0}
-  .bar{display:none}
-  .nav{display:flex;gap:28px}
-  .top .btn.small{display:inline-flex}
-  .burger{display:none}
-  .hero{grid-template-columns:1fr 1.1fr;min-height:calc(100svh - 64px)}
-  .hero-media{order:2;aspect-ratio:auto}
-  .hero-photo{object-position:70% 40%}
-  .hero-text{display:flex;align-items:center;justify-content:flex-end;padding:64px 56px 64px 20px}
-  section{padding:120px 0}
-  .split{grid-template-columns:1fr 1fr;gap:56px;align-items:end}
-  .features{grid-template-columns:repeat(4,1fr);gap:24px}
-  .staff{grid-template-columns:220px 1fr;gap:56px;max-width:860px;margin:0 auto}
-  .portrait{max-width:220px}
-  .band .box ul{grid-template-columns:1fr 1fr;column-gap:48px}
+/* ====== tablet ====== */
+@media(min-width:760px){
+  .facts .wrap{grid-template-columns:repeat(4,1fr)}
+  .facts div{border-bottom:0;border-right:1px solid var(--line);padding:22px 24px}
+  .facts div:last-child{border-right:0}
   .courses{grid-template-columns:repeat(3,1fr)}
-  .flow{grid-template-columns:repeat(4,1fr);border-top:0;gap:24px}
-  .flow li{padding:56px 0 20px;border-bottom:0;border-top:1px solid var(--rose-l)}
-  .flow li::before{top:14px}
-  .two{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+  .extras{grid-template-columns:1fr 1fr}
+  .cols{grid-template-columns:1fr 1fr}
+  .flow{grid-template-columns:repeat(4,1fr);gap:24px}
+  .flow li{padding:60px 0 0}
+  .flow li::after{left:48px;right:-24px;top:20px;bottom:auto;height:1px;width:auto}
+  .staff{grid-template-columns:200px 1fr;padding:40px 48px;gap:44px}
+  .portrait{width:200px}
 }
-@media (max-width:899px){.two .box+.box{margin-top:16px}}
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.js .rv{opacity:1;transform:none;transition:none}}
+/* ====== desktop ====== */
+@media(min-width:960px){
+  body{padding-bottom:0;font-size:16px}
+  .bar{display:none}
+  .burger,.drawer{display:none}
+  .nav{display:flex}
+  .top .btn{display:inline-flex}
+  .hero .wrap{grid-template-columns:1.05fr .95fr;align-items:center;gap:64px;padding-top:56px;padding-bottom:88px;min-height:calc(100svh - 68px)}
+  .hero-photo{order:2;aspect-ratio:4/5;max-height:640px}
+  .hero-text{order:1;padding-left:40px;position:relative}
+  .vtext{display:block;position:absolute;left:0;top:4px;writing-mode:vertical-rl;font-family:var(--serif);font-size:.82rem;letter-spacing:.34em;color:var(--mute);line-height:1}
+  .vtext::after{content:"";display:block;width:1px;height:64px;background:var(--gold);margin:16px auto 0}
+  .hero .cta .btn{flex:0 0 auto;min-width:240px}
+  section{padding:120px 0}
+  .head{margin-bottom:56px}
+  .about .wrap{grid-template-columns:.9fr 1.1fr;gap:72px;align-items:center}
+  .about-photo{max-height:none}
+  .reasons li{padding:30px 0;grid-template-columns:72px 1fr}
+  .places{gap:20px}
+  .place{padding:30px}
+}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "DaySpa", "name": "名古屋の出張ヘッドスパ", "description": "名古屋駅・栄・金山から徒歩圏内の完全個室で、看護師が行うドライヘッドスパ。", "areaServed": [{"@type": "Place", "name": "名古屋駅"}, {"@type": "Place", "name": "栄"}, {"@type": "Place", "name": "金山"}], "priceRange": "¥12,000〜¥20,000", "paymentAccepted": "キャッシュレス決済（Square）", "url": "https://nagoyaheadspa-collab.github.io/", "makesOffer": [{"@type": "Offer", "name": "ドライヘッドスパ 60分コース", "price": "12000", "priceCurrency": "JPY"}, {"@type": "Offer", "name": "ドライヘッドスパ 90分コース", "price": "16000", "priceCurrency": "JPY"}, {"@type": "Offer", "name": "ドライヘッドスパ 120分コース", "price": "20000", "priceCurrency": "JPY"}, {"@type": "Offer", "name": "ハンドリフレ（オプション）", "price": "1000", "priceCurrency": "JPY"}, {"@type": "Offer", "name": "ホットアイマスク（オプション）", "price": "550", "priceCurrency": "JPY"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "DaySpa", "name": "名古屋の出張ヘッドスパ", "description": "名古屋駅・栄・金山から徒歩圏内の完全個室で、看護師が行うドライヘッドスパ。", "image": "https://nagoyaheadspa-collab.github.io/images/spa-wide.jpg", "areaServed": [{"@type": "Place", "name": "名古屋駅"}, {"@type": "Place", "name": "栄"}, {"@type": "Place", "name": "金山"}], "priceRange": "¥12,000〜¥20,000", "paymentAccepted": "キャッシュレス決済（Square）", "url": "https://nagoyaheadspa-collab.github.io/", "makesOffer": [{"@type": "Offer", "name": "ドライヘッドスパ 60分コース", "price": "12000", "priceCurrency": "JPY"}, {"@type": "Offer", "name": "ドライヘッドスパ 90分コース", "price": "16000", "priceCurrency": "JPY"}, {"@type": "Offer", "name": "ドライヘッドスパ 120分コース", "price": "20000", "priceCurrency": "JPY"}, {"@type": "Offer", "name": "ハンドリフレ（オプション）", "price": "1000", "priceCurrency": "JPY"}, {"@type": "Offer", "name": "ホットアイマスク（オプション）", "price": "550", "priceCurrency": "JPY"}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "予約はどのようにすればいいですか？", "acceptedAnswer": {"@type": "Answer", "text": "LINEからご連絡ください。ご希望の日時、場所（名古屋駅・栄・金山）、コース、体調で気になることを教えていただければ、順番にお返事します。"}}, {"@type": "Question", "name": "ヘッドスパはどこで受けられますか？", "acceptedAnswer": {"@type": "Answer", "text": "名古屋駅・栄・金山の3か所です。いずれも駅から徒歩圏内の完全個室です。詳しい場所は、ご予約後にLINEでご案内します。"}}, {"@type": "Question", "name": "お支払い方法は何がありますか？", "acceptedAnswer": {"@type": "Answer", "text": "事前会計のみとなります。Squareでのキャッシュレス決済で、お支払い方法はご予約時にLINEでご案内します。"}}, {"@type": "Question", "name": "キャンセルはできますか？", "acceptedAnswer": {"@type": "Answer", "text": "ご予約日の2日前の20:00までにご連絡いただければ無料です。それ以降から前日までは料金の30%、当日やご連絡のないキャンセルは料金の100%をいただきます。ご連絡はLINEでお願いします。"}}, {"@type": "Question", "name": "日程を変更したいときは？", "acceptedAnswer": {"@type": "Answer", "text": "日程の変更はキャンセルにはならず、キャンセル料はかかりません。LINEでご希望の日時をお知らせください。"}}, {"@type": "Question", "name": "体調に不安があっても受けられますか？", "acceptedAnswer": {"@type": "Answer", "text": "事前にご相談ください。看護師が体調を伺い、できる範囲で行います。状態によっては、日を改めたり、かかりつけ医への確認をお願いしたりすることがあります。こちらからお断りした場合は、お支払いいただいた料金をご返金します。"}}, {"@type": "Question", "name": "持病があったり、お薬を飲んでいたりしても大丈夫ですか？", "acceptedAnswer": {"@type": "Answer", "text": "状態を伺ってから判断します。ご予約の際に、持病や飲んでいるお薬をお知らせください。"}}, {"@type": "Question", "name": "妊娠中でも受けられますか？", "acceptedAnswer": {"@type": "Answer", "text": "まずはご相談ください。時期やその日の体調を伺ってから判断します。"}}, {"@type": "Question", "name": "髪や服は濡れますか？", "acceptedAnswer": {"@type": "Answer", "text": "水やオイルは使わないので濡れません。服のまま受けられます。"}}, {"@type": "Question", "name": "年齢制限はありますか？", "acceptedAnswer": {"@type": "Answer", "text": "年齢は問いません。お仕事帰りの方も、ご年配の方も、ご利用いただけます。"}}]}</script>
 </head>
 <body>
 
 <header class="top" id="top">
 <div class="wrap">
-<a class="brand" href="#"><span><b>名古屋の出張ヘッドスパ</b><small>看護師のドライヘッドスパ</small></span></a>
-<nav class="nav" aria-label="ページ内メニュー">
-<a href="#about">特徴</a><a href="#menu">料金</a><a href="#flow">流れ</a><a href="#access">アクセス</a><a href="#faq">よくある質問</a>
+<a class="brand" href="#"><b>名古屋の出張ヘッドスパ</b><small>看護師のドライヘッドスパ</small></a>
+<nav class="nav" aria-label="ページ内">
+<a href="#about">特徴</a><a href="#menu">メニュー</a><a href="#flow">流れ</a><a href="#info">当日について</a><a href="#access">アクセス</a><a href="#faq">Q&amp;A</a>
 </nav>
-<a class="btn small" href="https://lin.ee/qxIkHOR" target="_blank" rel="noopener">LINEで予約</a>
-<button class="burger" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="drawer"><span></span></button>
+<a class="btn sm" href="https://lin.ee/qxIkHOR" target="_blank" rel="noopener">LINEで予約・相談</a>
+<button class="burger" type="button" aria-controls="drawer" aria-expanded="false" aria-label="メニューを開く"><i></i></button>
 </div>
 </header>
+
 <nav class="drawer" id="drawer" aria-label="メニュー">
-<a href="#about">特徴<small>ABOUT</small></a>
-<a href="#menu">メニューと料金<small>MENU</small></a>
-<a href="#flow">ご予約の流れ<small>FLOW</small></a>
-<a href="#info">当日・キャンセル<small>INFO</small></a>
-<a href="#access">アクセス<small>ACCESS</small></a>
-<a href="#faq">よくある質問<small>Q&amp;A</small></a>
-<a class="btn" href="https://lin.ee/qxIkHOR" target="_blank" rel="noopener">LINEで予約・相談する</a>
+<a href="#about">特徴<span class="en">About</span></a>
+<a href="#menu">メニューと料金<span class="en">Menu</span></a>
+<a href="#flow">ご予約の流れ<span class="en">Flow</span></a>
+<a href="#info">当日・キャンセル<span class="en">Info</span></a>
+<a href="#access">アクセス<span class="en">Access</span></a>
+<a href="#faq">よくある質問<span class="en">Q&amp;A</span></a>
+<a class="btn line" href="https://lin.ee/qxIkHOR" target="_blank" rel="noopener">LINEで予約・相談する</a>
 </nav>
 
 <main>
 
-<section class="hero">
-<div class="hero-media"><img class="hero-photo" src="images/spa-wide.jpg" alt="施術者が、横になったお客様の頭にやさしく触れている様子" width="1600" height="900" fetchpriority="high"></div>
-<div class="hero-text"><div class="inner">
-<h1><span class="kw">名古屋駅・栄・金山のヘッドスパ｜完全個室</span>駅近の個室で、<br><em>頭をゆるめる</em>時間を。</h1>
-<p class="lead">名古屋・金山エリアで、看護師が行うドライヘッドスパです。その日の体調を伺ってから、頭・首・肩・デコルテにゆっくりと触れていきます。</p>
-<ul class="badges">
-<li>看護師が担当</li>
-<li>駅から徒歩圏内</li>
-<li>髪も服も濡れない</li>
+<section class="hero" aria-labelledby="h1">
+<div class="wrap">
+<div class="hero-photo"><img src="images/spa-wide.jpg" alt="施術者が、横になったお客様の頭にやさしく触れている様子" width="1600" height="900" fetchpriority="high"></div>
+<div class="hero-text">
+<span class="vtext" aria-hidden="true">名古屋駅・栄・金山　完全個室</span>
+<p class="tag">看護師のドライヘッドスパ</p>
+<h1 id="h1">駅近の個室で、<br><em>頭をゆるめる</em>時間を。</h1>
+<p class="lead">名古屋駅・栄・金山の完全個室で、看護師が行うドライヘッドスパです。その日の体調を伺ってから、頭・首・肩・デコルテにゆっくりと触れていきます。</p>
+<ul class="points">
+<li>看護師が担当</li><li>駅から徒歩圏内</li><li>髪も服も濡れない</li><li>完全個室</li>
 </ul>
-<p class="price">60分 <b>12,000</b>円〜（税込）／ 足湯つき</p>
-<div class="hero-cta">
-<a class="btn" href="https://lin.ee/qxIkHOR" target="_blank" rel="noopener">LINEで空き状況を見る</a>
+<p class="price">60分 <b>12,000</b>円〜（税込）</p>
+<div class="cta">
+<a class="btn line" href="https://lin.ee/qxIkHOR" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 3C6.5 3 2 6.6 2 11c0 3.9 3.5 7.2 8.3 7.9.3.1.8.2.9.5.1.3.1.7 0 1l-.1.9c0 .3-.2 1 .9.5s5.9-3.5 8-6C21.4 14.3 22 12.7 22 11c0-4.4-4.5-8-10-8z"/></svg>LINEで空き状況を見る</a>
 <a class="btn ghost" href="#menu">メニューを見る</a>
 </div>
 <p class="hint">LINE受付 8:00〜20:00 ／ ご相談だけでもお気軽にどうぞ</p>
-</div></div>
+</div>
+</div>
 </section>
-<dl class="facts">
+
+<dl class="facts"><div class="wrap">
 <div><dt>場所</dt><dd>名古屋駅・栄・金山</dd></div>
 <div><dt>コース</dt><dd>60・90・120分</dd></div>
-<div><dt>お支払い</dt><dd>事前会計</dd></div>
-</dl>
+<div><dt>お支払い</dt><dd>事前会計（Square）</dd></div>
+<div><dt>LINE受付</dt><dd>8:00〜20:00</dd></div>
+</div></dl>
 
-<section id="about" class="alt">
+<section id="about" class="about">
 <div class="wrap">
-<div class="head split rv">
-<div><span class="en">About</span><h2>看護師だから、<br>一人ひとりに合わせます</h2></div>
-<p>看護師として、救命救急で3年、訪問看護で2年働いてきました。当日の体調やご希望を伺ったうえで、その方に合わせた内容で行います。</p>
+<figure class="about-photo"><img src="images/spa-portrait.jpg" alt="服のまま横になり、頭に触れてもらっている様子" width="933" height="1400" loading="lazy"><figcaption>水もオイルも使わない、服のままのヘッドスパ</figcaption></figure>
+<div>
+<div class="head"><span class="en">About</span><h2>看護師だから、<br>一人ひとりに合わせます</h2><p class="lead">看護師として、救命救急で3年、訪問看護で2年働いてきました。当日の体調やご希望を伺ったうえで、その方に合わせた内容で行います。</p></div>
+<ol class="reasons">
+<li><span class="n">01</span><div><h3>体調とご希望に合わせます</h3><p>当日の体調、持病、飲んでいるお薬、好みの力加減などを伺い、その方に合わせた内容で行います。</p></div></li>
+<li><span class="n">02</span><div><h3>行ってよいかを見極めます</h3><p>体調によっては、日を改めたり、受診をおすすめしたりすることがあります。無理には行いません。</p></div></li>
+<li><span class="n">03</span><div><h3>駅近の完全個室</h3><p>名古屋駅・栄・金山から歩いて行ける個室です。人目を気にせず、静かにお休みいただけます。</p></div></li>
+<li><span class="n">04</span><div><h3>水もオイルも使いません</h3><p>髪も服も濡れないので、服のまま受けられます。お仕事帰りやお買い物のついでにも。</p></div></li>
+</ol>
+<p class="note">リラクゼーションを目的としています。医療行為や診断は行いません。</p>
 </div>
-<div class="features">
-<article class="feat rv"><div class="art a1"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M24 8v32M8 24h32"/><circle cx="24" cy="24" r="17"/></svg></div><div class="body"><h3><i>01</i>体調とご希望に合わせます</h3><p>当日の体調、持病、飲んでいるお薬、好みの力加減などを伺い、その方に合わせた内容で行います。</p></div></article>
-<article class="feat rv"><div class="art a2"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M24 6l3.5 11H39l-9.3 6.8 3.5 11L24 28l-9.2 6.8 3.5-11L9 17h11.5z"/></svg></div><div class="body"><h3><i>02</i>行ってよいかを見極めます</h3><p>体調によっては、日を改めたり、受診をおすすめしたりすることがあります。無理には行いません。</p></div></article>
-<article class="feat rv"><div class="art a3"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="12" width="30" height="26" rx="3"/><path d="M9 20h30M17 8v8M31 8v8"/></svg></div><div class="body"><h3><i>03</i>駅近の完全個室</h3><p>名古屋駅・栄・金山から歩いて行ける個室です。人目を気にせず、静かにお休みいただけます。</p></div></article>
-<article class="feat rv"><div class="art a4"><img src="images/spa-portrait.jpg" alt="服のまま横になり、頭に触れてもらっている様子" width="933" height="1400" loading="lazy" style="object-position:50% 72%"><svg style="display:none" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M24 8c6 8 10 13 10 19a10 10 0 0 1-20 0c0-6 4-11 10-19z"/><path d="M10 10l28 28"/></svg></div><div class="body"><h3><i>04</i>水もオイルも使いません</h3><p>髪も服も濡れないので、服のまま受けられます。お仕事帰りやお買い物のついでにも。</p></div></article>
-</div>
-<p class="note" style="margin-top:22px">リラクゼーションを目的としています。医療行為や診断は行いません。</p>
 </div>
 </section>
 
-<section id="staff" style="background:var(--white)">
+<section id="staff" class="deep">
 <div class="wrap">
-<div class="staff rv">
-<div class="portrait"><img src="images/spa-portrait.jpg" alt="担当のRyoka" width="933" height="1400" loading="lazy" style="object-position:50% 6%;transform:scale(1.15);transform-origin:50% 18%"></div>
+<div class="staff">
+<div class="portrait"><img src="images/spa-portrait.jpg" alt="担当のRyoka" width="933" height="1400" loading="lazy"></div>
 <div>
 <span class="en">Staff</span>
-<h3><small>担当</small>Ryoka</h3>
-<ul><li>看護師</li><li>救命救急 3年</li><li>訪問看護 2年</li></ul>
+<h3>Ryoka<small>担当</small></h3>
+<ul class="cred"><li>看護師</li><li>救命救急 3年</li><li>訪問看護 2年</li></ul>
 <p>その経験をいかして、安心してくつろげる時間をご用意します。体調の変化にも、看護師として落ち着いて対応します。</p>
 </div>
 </div>
 </div>
 </section>
 
-<section id="for" class="band">
+<section id="for" class="for">
 <div class="wrap">
-<div class="head rv"><span class="en">For you</span><h2>こんな方におすすめです</h2></div>
-<div class="features" style="grid-template-columns:none">
-<div class="box rv">
+<div class="head center"><span class="en">For you</span><h2>こんな方におすすめです</h2></div>
 <ul>
 <li>仕事帰りや買い物のついでに、駅の近くで立ち寄りたい</li>
 <li>仕事や家事、育児が忙しく、自分のための時間がとれていない</li>
 <li>人目を気にせず、静かな個室でゆっくり休みたい</li>
 <li>ご家族やご両親に、くつろぐ時間をプレゼントしたい</li>
 </ul>
-<p class="note" style="margin:14px 0 0">年齢は問いません。体調に不安がある方も、事前にご相談ください。</p>
-</div>
-</div>
+<p class="note">年齢は問いません。体調に不安がある方も、事前にご相談ください。</p>
 </div>
 </section>
 
-<section id="menu">
+<section id="menu" class="deep">
 <div class="wrap">
-<div class="head split rv">
-<div><span class="en">Menu</span><h2>ヘッドスパのメニューと料金</h2></div>
-<p>すべてのコースに、カウンセリング中の足湯がつきます。水もオイルも使わないドライヘッドスパです。</p>
-</div>
+<div class="head center"><span class="en">Menu</span><h2>メニューと料金</h2><p class="lead">水もオイルも使わないドライヘッドスパです。当日の体調を伺ってから、コースの内容を合わせます。</p></div>
 <div class="courses">
-<div class="course rv"><div class="time">60<small>分</small></div><div class="yen">12,000円<small>税込</small></div><p>頭・首・肩を中心に。はじめての方に。</p></div>
-<div class="course pick rv"><span class="tag">おすすめ</span><div class="time">90<small>分</small></div><div class="yen">16,000円<small>税込</small></div><p>頭・首・肩に加えて、デコルテまでじっくりと。</p></div>
-<div class="course rv"><div class="time">120<small>分</small></div><div class="yen">20,000円<small>税込</small></div><p>時間をかけてたっぷりと。しっかり休みたい日に。</p></div>
+<div class="course"><span class="en">Course 01</span><div class="time">60<small>分</small></div><div class="yen">12,000円<small>税込</small></div><p>頭・首・肩を中心に。はじめての方に。</p></div>
+<div class="course pick"><span class="tag">おすすめ</span><span class="en">Course 02</span><div class="time">90<small>分</small></div><div class="yen">16,000円<small>税込</small></div><p>頭・首・肩に加えて、デコルテまでじっくりと。</p></div>
+<div class="course"><span class="en">Course 03</span><div class="time">120<small>分</small></div><div class="yen">20,000円<small>税込</small></div><p>時間をかけてたっぷりと。しっかり休みたい日に。</p></div>
 </div>
-<div class="extras rv">
-<div class="extra"><b>足湯<small>サービス</small></b><span class="y">無料</span><p>カウンセリングの間、足を温かいお湯にひたしながらお話を伺います。どなたにもご用意しています（足の状態によっては行えないことがあります）。</p></div>
+<div class="extras">
 <div class="extra"><b>ハンドリフレ<small>オプション</small></b><span class="y">+1,000円</span><p>手のひらから腕まで、ゆっくりと。パソコンやスマホで使いがちな手を、どうぞ預けてください。</p></div>
 <div class="extra"><b>ホットアイマスク<small>オプション</small></b><span class="y">+550円</span><p>温かいアイマスクで目元をおおい、光をさえぎって、静かにお休みいただけます。</p></div>
 </div>
-<p class="note" style="margin-top:16px">お支払いは<b>事前会計のみ</b>です（Squareのキャッシュレス決済）。お支払い方法は、ご予約時にLINEでご案内します。</p>
-<div class="cta">
-<a class="btn" href="https://lin.ee/qxIkHOR" target="_blank" rel="noopener">このメニューで予約する</a>
-<p>コースに迷ったら、LINEでご相談ください</p>
-</div>
+<div class="pay"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="2"/><path d="M3 10h18M7 14h3"/></svg><p>お支払いは<b>事前会計のみ</b>です（Squareのキャッシュレス決済）。お支払い方法は、ご予約時にLINEでご案内します。</p></div>
+<div class="cta-block"><a class="btn line" href="https://lin.ee/qxIkHOR" target="_blank" rel="noopener">このメニューで予約する</a><p>コースに迷ったら、LINEでご相談ください</p></div>
 </div>
 </section>
 
-<section id="flow" class="alt">
+<section id="flow">
 <div class="wrap">
-<div class="head rv"><span class="en">Flow</span><h2>ご予約から当日までの流れ</h2></div>
+<div class="head center"><span class="en">Flow</span><h2>ご予約から当日までの流れ</h2></div>
 <ol class="flow">
-<li class="rv"><b>LINEでご連絡</b><span>ご希望の日時、場所（名古屋駅・栄・金山）、コースを送ってください。</span></li>
-<li class="rv"><b>日程のご案内・事前のお支払い</b><span>空き状況をお返事し、お支払い方法と詳しい場所をお知らせします。</span></li>
-<li class="rv"><b>カウンセリング・足湯</b><span>足湯でくつろぎながら、体調やご希望を伺います。</span></li>
-<li class="rv"><b>ヘッドスパ</b><span>終わったらお水をお渡しします。お会計は済んでいるので、そのままお帰りいただけます。</span></li>
+<li><b>LINEでご連絡</b><span>ご希望の日時、場所（名古屋駅・栄・金山）、コースを送ってください。</span></li>
+<li><b>日程のご案内・事前のお支払い</b><span>空き状況をお返事し、お支払い方法と詳しい場所をお知らせします。</span></li>
+<li><b>カウンセリング</b><span>当日の体調やご希望、好みの力加減を伺います。</span></li>
+<li><b>ヘッドスパ</b><span>終わったらお水をお渡しします。お会計は済んでいるので、そのままお帰りいただけます。</span></li>
 </ol>
 </div>
 </section>
 
-<section id="info">
+<section id="info" class="deep">
 <div class="wrap">
-<div class="head rv"><span class="en">Information</span><h2>当日について</h2></div>
-<div class="two">
-<div class="box rv">
-<h3>服装・持ち物</h3>
-<ul>
+<div class="head center"><span class="en">Information</span><h2>当日について</h2></div>
+<div class="cols">
+<div class="box"><h3>服装・持ち物</h3><ul>
 <li>髪も服も濡れないので、服のまま受けられます</li>
 <li>首元がゆったりした服だと、デコルテまで行いやすくなります</li>
-<li>足湯のため、ひざ下を出しやすいゆったりしたズボンがおすすめです</li>
 <li>持ち物は特にありません</li>
-</ul>
-</div>
-<div class="box rv">
-<h3>お断りする場合</h3>
-<ul>
+</ul></div>
+<div class="box"><h3>お断りする場合</h3><ul>
 <li>発熱や強い体調不良があるとき</li>
 <li>頭部や首にけが、傷、強い炎症があるとき</li>
 <li>医師から安静や制限を指示されているとき</li>
-<li>足湯は、足に傷や強い腫れがあるとき、足の感覚が鈍いときなどはお控えいただくことがあります</li>
-</ul>
+</ul></div>
 </div>
-</div>
-<div class="box cancel rv" id="cancel">
+<div class="box cancel" id="cancel">
 <h3>キャンセルについて</h3>
 <dl>
-<dt>ご予約日の2日前 20:00まで</dt><dd>無料</dd>
-<dt>2日前 20:00以降〜前日</dt><dd>料金の30%</dd>
-<dt>当日・ご連絡のないキャンセル</dt><dd>料金の100%</dd>
+<div class="row"><dt>ご予約日の2日前 20:00まで</dt><dd class="free">無料</dd></div>
+<div class="row"><dt>2日前 20:00以降〜前日</dt><dd>料金の30%</dd></div>
+<div class="row"><dt>当日・ご連絡のないキャンセル</dt><dd>料金の100%</dd></div>
 </dl>
 <p>キャンセルのご連絡はLINEでお願いします。事前にお支払いいただいた料金から、キャンセル料を差し引いてご返金します。</p>
 <p><b>日程の変更</b>はキャンセルにはなりません。キャンセル料なしで承りますので、LINEでご相談ください。</p>
@@ -408,24 +440,21 @@ footer span{display:inline-block;margin:0 .7em}
 </div>
 </section>
 
-<section id="access" class="alt">
+<section id="access" class="access">
 <div class="wrap">
-<div class="head split rv">
-<div><span class="en">Access</span><h2 id="area">名古屋駅・栄・金山のヘッドスパ</h2></div>
-<p>名古屋駅、栄、金山の3か所でヘッドスパを行っています。どこも駅から歩いて行ける完全個室なので、お仕事帰りやお買い物のついでにも立ち寄れます。ご都合のよい場所をお選びください。</p>
-</div>
-<div class="places rv">
+<div class="head center"><span class="en">Access</span><h2 id="area">名古屋駅・栄・金山の3か所</h2><p class="lead">どこも駅から歩いて行ける完全個室です。お仕事帰りやお買い物のついでにも立ち寄れます。ご都合のよい場所をお選びください。</p></div>
+<div class="places">
 <div class="place"><b>名古屋駅</b><span>徒歩圏内</span></div>
 <div class="place"><b>栄</b><span>徒歩圏内</span></div>
 <div class="place"><b>金山</b><span>徒歩圏内</span></div>
 </div>
-<p class="note" style="margin-top:16px;text-align:center">いずれも完全個室です。詳しい場所は、ご予約後にLINEでご案内します。</p>
+<p class="note">詳しい場所は、ご予約後にLINEでご案内します。</p>
 </div>
 </section>
 
-<section id="faq">
-<div class="wrap" style="max-width:860px">
-<div class="head rv"><span class="en">Q&amp;A</span><h2>よくあるご質問</h2></div>
+<section id="faq" class="faq deep">
+<div class="wrap">
+<div class="head center"><span class="en">Q&amp;A</span><h2>よくあるご質問</h2></div>
 <details><summary>予約はどのようにすればいいですか？</summary><p>LINEからご連絡ください。ご希望の日時、場所（名古屋駅・栄・金山）、コース、体調で気になることを教えていただければ、順番にお返事します。</p></details>
 <details><summary>ヘッドスパはどこで受けられますか？</summary><p>名古屋駅・栄・金山の3か所です。いずれも駅から徒歩圏内の完全個室です。詳しい場所は、ご予約後にLINEでご案内します。</p></details>
 <details><summary>お支払い方法は何がありますか？</summary><p>事前会計のみとなります。Squareでのキャッシュレス決済で、お支払い方法はご予約時にLINEでご案内します。</p></details>
@@ -439,45 +468,34 @@ footer span{display:inline-block;margin:0 .7em}
 </div>
 </section>
 
-<section id="reserve" class="final alt">
+<section id="reserve" class="reserve">
 <div class="wrap">
 <span class="en">Reservation</span>
 <h2>ご予約・ご相談はLINEで</h2>
 <p class="lead">空き状況の確認だけでも大丈夫です。お気軽にメッセージをお送りください。</p>
-<dl class="hours">
-<dt>LINE受付</dt><dd>8:00〜20:00</dd>
-<dt>最終開始</dt><dd>21:00</dd>
-</dl>
-<div class="cta" style="margin-top:28px">
-<a class="btn" href="https://lin.ee/qxIkHOR" target="_blank" rel="noopener">LINEで空き状況を見る</a>
-<p>施術中は返信が遅れることがありますが、順番にお返事します。</p>
-</div>
+<dl class="hours"><div><dt>LINE受付</dt><dd>8:00〜20:00</dd></div><div><dt>最終開始</dt><dd>21:00</dd></div></dl>
+<div class="cta-block"><a class="btn line" href="https://lin.ee/qxIkHOR" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 3C6.5 3 2 6.6 2 11c0 3.9 3.5 7.2 8.3 7.9.3.1.8.2.9.5.1.3.1.7 0 1l-.1.9c0 .3-.2 1 .9.5s5.9-3.5 8-6C21.4 14.3 22 12.7 22 11c0-4.4-4.5-8-10-8z"/></svg>LINEで空き状況を見る</a><p>施術中は返信が遅れることがありますが、順番にお返事します。</p></div>
 </div>
 </section>
 
 </main>
 
-<footer><div class="wrap"><span>屋号：名古屋の出張ヘッドスパ</span><span>担当：Ryoka</span><span>名古屋駅・栄・金山</span><br><small>© 2026 名古屋の出張ヘッドスパ</small></div></footer>
+<footer><div class="wrap"><span>名古屋の出張ヘッドスパ</span><span>担当：Ryoka</span><span>名古屋駅・栄・金山</span><small>© 2026 Nagoya Head Spa</small></div></footer>
 
 <nav class="bar" aria-label="ご予約">
-<a href="#menu">料金<small>MENU</small></a>
-<a href="#access">アクセス<small>ACCESS</small></a>
+<a href="#menu">料金<small>Menu</small></a>
+<a href="#access">アクセス<small>Access</small></a>
 <a class="main" href="https://lin.ee/qxIkHOR" target="_blank" rel="noopener">LINEで予約<small>空き確認・ご相談</small></a>
 </nav>
 
 <script>
 (()=>{
-  const top=document.getElementById('top'),b=document.querySelector('.burger'),root=document.documentElement;
-  const onScroll=()=>top.classList.toggle('scrolled',scrollY>20);
-  onScroll();addEventListener('scroll',onScroll,{passive:true});
+  const b=document.querySelector('.burger'),root=document.documentElement;
+  if(!b)return;
   const set=o=>{root.classList.toggle('menu-open',o);b.setAttribute('aria-expanded',o);b.setAttribute('aria-label',o?'メニューを閉じる':'メニューを開く')};
   b.addEventListener('click',()=>set(!root.classList.contains('menu-open')));
   document.querySelectorAll('.drawer a').forEach(a=>a.addEventListener('click',()=>set(false)));
   addEventListener('keydown',e=>{if(e.key==='Escape')set(false)});
-  const els=document.querySelectorAll('.rv');
-  if(!('IntersectionObserver' in window)){els.forEach(e=>e.classList.add('in'));return}
-  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{rootMargin:'0px 0px -8% 0px'});
-  els.forEach(e=>io.observe(e));
 })();
 </script>
 </body>
