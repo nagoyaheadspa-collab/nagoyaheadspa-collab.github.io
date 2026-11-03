@@ -17,7 +17,7 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%238d5560'/%3E%3Cpath d='M20 38c4-10 20-10 24 0' fill='none' stroke='white' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Shippori+Mincho:wght@500;600&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Shippori+Mincho:wght@500;600&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
 <style>
 /* ====== tokens ====== */
 :root{
@@ -111,6 +111,44 @@ strong,b{font-weight:700}
 .vtext{display:none}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
 
+/* ====== FV（白地・黒太字・赤の筆・左右に人物） ====== */
+.fv{position:relative;overflow:hidden;background:#fff;padding:0;min-height:620px;display:grid;grid-template-rows:1fr auto}
+.fv-brush{position:absolute;inset:0;width:100%;height:100%;z-index:0;pointer-events:none;opacity:.9}
+.fv-person{position:absolute;bottom:0;z-index:1;height:auto;pointer-events:none;user-select:none}
+.fv-left{left:-4%;width:52%;max-width:360px}
+.fv-right{right:-6%;width:56%;max-width:380px}
+.fv-text{position:relative;z-index:2;text-align:center;padding:36px 16px 0}
+.fv h1{font-family:var(--sans);font-weight:900;font-size:clamp(1.9rem,8.6vw,5.4rem);line-height:1.22;letter-spacing:.02em;color:#111;text-shadow:0 0 18px #fff,0 0 36px #fff,0 2px 0 #fff;word-break:keep-all}
+.fv-sub{margin-top:18px;font-weight:900;font-size:clamp(.95rem,3.6vw,1.6rem);line-height:1.5;color:#111;letter-spacing:.04em;text-shadow:0 0 14px #fff,0 0 28px #fff}
+.fv-name{display:inline-block;margin-top:16px;background:#111;color:#fff;font-weight:900;font-size:clamp(1.05rem,4.2vw,2rem);letter-spacing:.06em;padding:8px 22px;line-height:1.4}
+.fv-cta{margin:18px auto 0;display:inline-flex}
+.fv .sp{display:inline}
+.fv-tab{display:none}
+.fv::after{content:"";grid-row:2;height:300px;pointer-events:none}
+@media(min-width:760px){
+  .fv{min-height:640px}
+  .fv-left{left:0;width:38%;max-width:520px}
+  .fv-right{right:0;width:40%;max-width:540px}
+  .fv-text{padding-top:56px}
+  .fv .sp{display:none}
+  .fv::after{height:0}
+  .fv-text{padding-bottom:70px}
+}
+@media(min-width:960px){
+  .fv{min-height:calc(100svh - 68px);max-height:860px;grid-template-rows:1fr}
+  .fv-left{left:-3%;width:34%;max-width:560px}
+  .fv-right{right:2%;width:36%;max-width:600px}
+  .fv-text{padding:60px 120px 60px 120px;align-self:center}
+  .fv h1{font-size:clamp(2.6rem,4.6vw,4.5rem);line-height:1.25}
+  .fv-sub{font-size:1.35rem;margin-top:22px}
+  .fv-name{margin-top:20px;font-size:1.7rem;padding:8px 26px}
+  .fv-cta{display:none}
+  .fv-tab{display:flex;flex-direction:row;align-items:center;justify-content:center;gap:12px;position:absolute;top:0;right:0;z-index:3;width:92px;height:58%;background:#111;color:#fff;text-decoration:none;transition:background .2s}
+  .fv-tab:hover{background:#06c755}
+  .fv-tab span{writing-mode:vertical-rl;text-orientation:mixed;display:block}
+  .fv-tab .big{font-family:var(--en);font-weight:600;font-size:2.4rem;letter-spacing:.16em;line-height:1}
+  .fv-tab .small{font-size:.78rem;letter-spacing:.18em;font-weight:500;line-height:1}
+}
 /* facts */
 .facts{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--white);margin:0}
 .facts .wrap{display:grid;grid-template-columns:repeat(2,1fr)}
@@ -324,25 +362,25 @@ footer small{display:block;margin-top:10px;font-family:var(--en);letter-spacing:
 
 <main>
 
-<section class="hero" aria-labelledby="h1">
-<div class="wrap">
-<div class="hero-photo"><img src="images/spa-wide.jpg" alt="施術者が、横になったお客様の頭にやさしく触れている様子" width="1600" height="900" fetchpriority="high"></div>
-<div class="hero-text">
-<span class="vtext" aria-hidden="true">名古屋駅・栄・金山　完全個室</span>
-<p class="tag">看護師のドライヘッドスパ</p>
-<h1 id="h1">駅近の個室で、<br><em>頭をゆるめる</em>時間を。</h1>
-<p class="lead">名古屋駅・栄・金山の完全個室で、看護師が行うドライヘッドスパです。その日の体調を伺ってから、頭・首・肩・デコルテにゆっくりと触れていきます。</p>
-<ul class="points">
-<li>看護師が担当</li><li>駅から徒歩圏内</li><li>髪も服も濡れない</li><li>完全個室</li>
-</ul>
-<p class="price">60分 <b>12,000</b>円〜（税込）</p>
-<div class="cta">
-<a class="btn line" href="https://lin.ee/qxIkHOR" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 3C6.5 3 2 6.6 2 11c0 3.9 3.5 7.2 8.3 7.9.3.1.8.2.9.5.1.3.1.7 0 1l-.1.9c0 .3-.2 1 .9.5s5.9-3.5 8-6C21.4 14.3 22 12.7 22 11c0-4.4-4.5-8-10-8z"/></svg>LINEで空き状況を見る</a>
-<a class="btn ghost" href="#menu">メニューを見る</a>
+<section class="fv" aria-labelledby="h1">
+<svg class="fv-brush" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
+<defs><filter id="rough" x="-10%" y="-10%" width="120%" height="120%"><feTurbulence type="fractalNoise" baseFrequency=".012 .05" numOctaves="3" seed="7"/><feDisplacementMap in="SourceGraphic" scale="34" xChannelSelector="R" yChannelSelector="G"/></filter></defs>
+<g filter="url(#rough)" fill="none" stroke="#d6232b" stroke-linecap="round">
+<path d="M-60 760 C 300 700, 700 560, 1200 470 S 1700 420, 1700 420" stroke-width="118" opacity=".92"/>
+<path d="M-40 880 C 400 820, 800 700, 1250 620 S 1700 560, 1700 560" stroke-width="62" opacity=".8"/>
+<path d="M300 860 C 500 840, 650 790, 900 760" stroke-width="40" opacity=".7"/>
+<path d="M1250 420 C 1400 380, 1500 350, 1700 320" stroke-width="42" opacity=".7"/>
+</g>
+</svg>
+<img class="fv-person fv-left" src="images/fv-client.webp" alt="" width="900" height="1267" fetchpriority="high">
+<img class="fv-person fv-right" src="images/fv-ryoka.webp" alt="担当のRyoka（看護師）" width="915" height="866" fetchpriority="high">
+<div class="fv-text">
+<h1 id="h1">名古屋・金山・栄で<br>極上の<br class="sp">ドライヘッドスパを！</h1>
+<p class="fv-sub">看護師が行う、完全個室の<br class="sp">ドライヘッドスパ</p>
+<p class="fv-name">名古屋の出張ヘッドスパ</p>
+<a class="btn line fv-cta" href="https://lin.ee/qxIkHOR" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 3C6.5 3 2 6.6 2 11c0 3.9 3.5 7.2 8.3 7.9.3.1.8.2.9.5.1.3.1.7 0 1l-.1.9c0 .3-.2 1 .9.5s5.9-3.5 8-6C21.4 14.3 22 12.7 22 11c0-4.4-4.5-8-10-8z"/></svg>LINEで空き状況を見る</a>
 </div>
-<p class="hint">LINE受付 8:00〜20:00 ／ ご相談だけでもお気軽にどうぞ</p>
-</div>
-</div>
+<a class="fv-tab" href="https://lin.ee/qxIkHOR" target="_blank" rel="noopener"><span class="big">LINE</span><span class="small">空き状況・ご相談はこちら</span></a>
 </section>
 
 <dl class="facts"><div class="wrap">
