@@ -150,12 +150,6 @@ section{padding:88px 0;position:relative}
 .cta-block{text-align:center;margin-top:44px}
 .cta-block p{margin-top:14px;font-size:.86rem}
 
-/* facts（黒帯） */
-.facts{background:var(--ink);color:#fff;margin:0}
-.facts .wrap{display:grid;grid-template-columns:repeat(2,1fr)}
-.facts div{padding:16px 8px;display:flex;flex-direction:column;gap:2px;border-bottom:1px solid rgba(255,255,255,.12)}
-.facts dt{font-size:.7rem;letter-spacing:.2em;color:rgba(255,255,255,.65);font-weight:700}
-.facts dd{margin:0;font-weight:900;font-size:1.02rem;letter-spacing:.04em}
 
 /* about（赤） */
 .about .wrap{display:grid;gap:36px}
@@ -283,9 +277,6 @@ footer small{display:block;margin-top:14px;font-family:var(--en);letter-spacing:
 /* ====== tablet ====== */
 @media(min-width:760px){
   .sp{display:none}
-  .facts .wrap{grid-template-columns:repeat(4,1fr)}
-  .facts div{border-bottom:0;border-right:1px solid rgba(255,255,255,.12);padding:20px 24px}
-  .facts div:last-child{border-right:0}
   .courses{grid-template-columns:repeat(3,1fr)}
   .extras{grid-template-columns:1fr 1fr}
   .extra>div{grid-template-columns:1fr auto;gap:4px 16px}
@@ -363,13 +354,6 @@ footer small{display:block;margin-top:14px;font-family:var(--en);letter-spacing:
 </div>
 <a class="fv-tab" href="https://lin.ee/qxIkHOR" target="_blank" rel="noopener"><span class="big">LINE</span><span class="small">空き状況・ご相談はこちら</span></a>
 </section>
-
-<dl class="facts"><div class="wrap">
-<div><dt>場所</dt><dd>名古屋駅・栄・金山</dd></div>
-<div><dt>コース</dt><dd>60・90・120分</dd></div>
-<div><dt>お支払い</dt><dd>事前会計（Square）</dd></div>
-<div><dt>LINE受付</dt><dd>8:00〜20:00</dd></div>
-</div></dl>
 
 <section id="about" class="about on-red slant-b">
 <div class="wrap">
