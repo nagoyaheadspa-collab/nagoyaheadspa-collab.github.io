@@ -8,7 +8,7 @@
 <meta name="robots" content="index,follow">
 <link rel="canonical" href="https://nagoyaheadspa-collab.github.io/">
 <meta property="og:url" content="https://nagoyaheadspa-collab.github.io/">
-<meta name="theme-color" content="#f7f3ef">
+<meta name="theme-color" content="#fdf9f7">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="ja_JP">
 <meta property="og:title" content="名古屋・金山のヘッドスパ｜看護師のドライヘッドスパ">
@@ -20,7 +20,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;1,600&family=Shippori+Mincho:wght@500;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
 <script>document.documentElement.classList.add('js')</script>
 <style>
-:root{color-scheme:light;--bg:#f7f3ef;--bg2:#efe8e2;--white:#fffdfb;--ink:#3a2c27;--sub:#6b5a53;--mute:#8d7d76;--line:#e1d6ce;--rose:#9c5d6c;--rose-d:#7f4656;--rose-l:#c99aa5;--band:#8f7a75;--brown:#8a6a4f}
+:root{color-scheme:light;--bg:#fdf9f7;--bg2:#f9f0ee;--white:#fff;--ink:#4a3b37;--sub:#76655f;--mute:#958580;--line:#efe3df;--rose:#b26478;--rose-d:#9a5266;--rose-l:#e3b5c0;--pink:#f0c4ce;--pink-d:#e8aebb;--band:#f6e1e5;--brown:#a88468}
 *,*::before,*::after{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:72px;background:var(--bg)}
 body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/2 "Noto Sans JP",sans-serif;padding-bottom:calc(60px + env(safe-area-inset-bottom,0px));-webkit-font-smoothing:antialiased}
@@ -44,11 +44,11 @@ img{max-width:100%;display:block}
 .nav{display:none}
 .nav a{color:var(--ink);text-decoration:none;font-family:"Shippori Mincho",serif;font-size:.92rem;letter-spacing:.06em;white-space:nowrap}
 .nav a:hover{color:var(--rose)}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:14px;background:var(--rose);color:#fff;text-decoration:none;font-family:"Shippori Mincho",serif;font-weight:600;letter-spacing:.1em;padding:15px 30px;border-radius:2px;border:1px solid var(--rose);font-size:1rem;transition:background .2s,border-color .2s}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:14px;background:var(--pink);color:var(--ink);text-decoration:none;font-family:"Shippori Mincho",serif;font-weight:600;letter-spacing:.1em;padding:15px 30px;border-radius:2px;border:1px solid var(--pink);font-size:1rem;transition:background .2s,border-color .2s}
 .btn::after{content:"";width:16px;height:1px;background:currentColor;flex:none}
-.btn:hover{background:var(--rose-d);border-color:var(--rose-d)}
-.btn.ghost{background:transparent;color:var(--ink);border-color:var(--ink)}
-.btn.ghost:hover{background:var(--ink);color:var(--white)}
+.btn:hover{background:var(--pink-d);border-color:var(--pink-d)}
+.btn.ghost{background:var(--white);color:var(--ink);border-color:var(--rose-l)}
+.btn.ghost:hover{background:var(--bg2)}
 .btn.small{padding:9px 18px;font-size:.88rem}
 .btn.small::after{display:none}
 .top .btn.small{display:none}
@@ -63,7 +63,7 @@ img{max-width:100%;display:block}
 .menu-open .drawer{opacity:1;visibility:visible}
 .drawer a{color:var(--ink);text-decoration:none;font-family:"Shippori Mincho",serif;font-size:1.15rem;letter-spacing:.06em;padding:16px 0;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:baseline}
 .drawer a small{font-family:"Cormorant Garamond",serif;color:var(--brown);font-size:.9rem;letter-spacing:.06em}
-.drawer a.btn{margin-top:28px;border-bottom:1px solid var(--rose);justify-content:center;color:#fff;font-size:1rem}
+.drawer a.btn{margin-top:28px;border-bottom:1px solid var(--pink);justify-content:center;color:var(--ink);font-size:1rem}
 .menu-open{overflow:hidden}
 .menu-open .bar{opacity:0;pointer-events:none}
 
@@ -78,7 +78,7 @@ img{max-width:100%;display:block}
 .hero h1 em{font-style:normal;color:var(--rose)}
 .hero .lead{color:var(--sub);margin:22px 0 0}
 .badges{display:flex;flex-wrap:wrap;gap:6px 18px;list-style:none;padding:0;margin:20px 0 0;font-size:.86rem;color:var(--ink)}
-.badges li::before{content:"";display:inline-block;width:5px;height:5px;background:var(--rose);margin-right:8px;vertical-align:3px}
+.badges li::before{content:"";display:inline-block;width:5px;height:5px;background:var(--pink-d);margin-right:8px;vertical-align:3px}
 .price{margin:22px 0 0;color:var(--sub);font-size:.92rem;border-top:1px solid var(--line);padding-top:18px}
 .price b{font-family:"Shippori Mincho",serif;font-size:1.7rem;color:var(--ink);margin:0 3px;font-weight:600}
 .hero-cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
@@ -93,12 +93,12 @@ img{max-width:100%;display:block}
 /* ---------- sections ---------- */
 section{padding:88px 0}
 .alt{background:var(--bg2)}
-.band{background:var(--band);color:#fff}
-.band .en{color:#efe3dc}
+.band{background:var(--band);color:var(--ink)}
+.band .en{color:var(--rose)}
 .head{margin-bottom:40px}
 .head h2{font-size:clamp(1.5rem,5vw,2.2rem)}
-.head h2::after{content:"";display:block;width:36px;height:1px;background:var(--rose);margin-top:18px}
-.band .head h2::after{background:#fff}
+.head h2::after{content:"";display:block;width:36px;height:1px;background:var(--pink-d);margin-top:18px}
+.band .head h2::after{background:var(--rose)}
 .head p{color:var(--sub);margin:18px 0 0;max-width:36em}
 .split{display:grid;gap:12px}
 
@@ -126,22 +126,22 @@ section{padding:88px 0}
 
 /* for you band */
 .band .box{background:transparent;border:0;padding:0}
-.band .box ul{list-style:none;padding:0;margin:0;color:#fff;font-size:1rem;display:grid;gap:0}
-.band .box li{padding:16px 0 16px 30px;border-bottom:1px solid rgba(255,255,255,.28);position:relative;margin:0}
-.band .box li::before{content:"";position:absolute;left:4px;top:26px;width:12px;height:6px;border-left:1.5px solid #fff;border-bottom:1.5px solid #fff;transform:rotate(-45deg)}
-.band .note{color:#efe3dc}
+.band .box ul{list-style:none;padding:0;margin:0;color:var(--ink);font-size:1rem;display:grid;gap:0}
+.band .box li{padding:16px 0 16px 30px;border-bottom:1px solid rgba(178,100,120,.2);position:relative;margin:0}
+.band .box li::before{content:"";position:absolute;left:4px;top:26px;width:12px;height:6px;border-left:1.5px solid var(--rose);border-bottom:1.5px solid var(--rose);transform:rotate(-45deg)}
+.band .note{color:var(--sub)}
 
 /* menu */
 .courses{display:grid;gap:16px}
 .course{position:relative;background:var(--white);border:1px solid var(--line);padding:28px 24px}
-.course.pick{border-top:3px solid var(--rose)}
-.course .tag{position:absolute;top:0;right:0;background:var(--rose);color:#fff;font-size:.72rem;padding:3px 12px;letter-spacing:.1em}
+.course.pick{border-top:3px solid var(--pink-d)}
+.course .tag{position:absolute;top:0;right:0;background:var(--pink);color:var(--ink);font-size:.72rem;padding:3px 12px;letter-spacing:.1em}
 .course .time{font-family:"Shippori Mincho",serif;font-size:2.4rem;line-height:1;font-weight:600}
 .course .time small{font-size:.95rem;color:var(--sub);margin-left:4px;font-weight:500}
 .course .yen{font-family:"Shippori Mincho",serif;font-size:1.4rem;margin:14px 0 0;color:var(--rose);font-weight:600}
 .course .yen small{font-family:"Noto Sans JP",sans-serif;font-size:.76rem;color:var(--mute);margin-left:4px;font-weight:400}
 .course p{color:var(--sub);font-size:.9rem;margin:14px 0 0;padding-top:14px;border-top:1px solid var(--line)}
-.extras{margin-top:24px;border-top:1px solid var(--ink)}
+.extras{margin-top:24px;border-top:1px solid var(--rose-l)}
 .extra{display:grid;grid-template-columns:1fr auto;gap:4px 16px;padding:18px 0;border-bottom:1px solid var(--line)}
 .extra b{font-family:"Shippori Mincho",serif;font-weight:600}
 .extra b small{display:inline-block;margin-left:10px;font-family:"Noto Sans JP",sans-serif;font-size:.72rem;font-weight:400;color:var(--mute);vertical-align:1px;white-space:nowrap}
@@ -165,7 +165,7 @@ section{padding:88px 0}
 .box li{margin-bottom:6px}
 .box li::marker{color:var(--rose-l)}
 .cancel{margin-top:20px}
-.cancel dl{display:grid;grid-template-columns:1fr auto;margin:0;border-top:1px solid var(--ink)}
+.cancel dl{display:grid;grid-template-columns:1fr auto;margin:0;border-top:1px solid var(--rose-l)}
 .cancel dt,.cancel dd{margin:0;padding:13px 4px;border-bottom:1px solid var(--line)}
 .cancel dd{font-family:"Shippori Mincho",serif;font-weight:600;color:var(--rose);white-space:nowrap;text-align:right}
 .cancel p{color:var(--sub);font-size:.88rem;margin:12px 0 0}
@@ -180,11 +180,11 @@ section{padding:88px 0}
 
 /* faq */
 details{border-bottom:1px solid var(--line)}
-details:first-of-type{border-top:1px solid var(--ink)}
+details:first-of-type{border-top:1px solid var(--rose-l)}
 summary{cursor:pointer;font-weight:500;padding:20px 40px 20px 0;list-style:none;position:relative}
 summary::-webkit-details-marker{display:none}
 summary::before{content:"Q.";font-family:"Cormorant Garamond",serif;color:var(--rose);font-size:1.2rem;margin-right:10px;font-weight:600}
-summary::after{content:"+";position:absolute;right:4px;top:50%;transform:translateY(-50%);font-size:1.3rem;color:var(--ink);font-weight:300}
+summary::after{content:"+";position:absolute;right:4px;top:50%;transform:translateY(-50%);font-size:1.3rem;color:var(--rose);font-weight:300}
 details[open] summary::after{content:"−"}
 details p{margin:0;padding:0 0 22px 30px;color:var(--sub);font-size:.92rem}
 
@@ -196,7 +196,7 @@ details p{margin:0;padding:0 0 22px 30px;color:var(--sub);font-size:.92rem}
 .hours dt{color:var(--mute)}
 .hours dd{margin:0}
 
-footer{padding:36px 0 40px;font-size:.78rem;color:#e9ddd6;text-align:center;background:var(--ink)}
+footer{padding:36px 0 40px;font-size:.78rem;color:var(--sub);text-align:center;background:var(--bg2);border-top:1px solid var(--line)}
 footer span{display:inline-block;margin:0 .7em}
 
 /* fixed bar (phones) */
@@ -204,8 +204,8 @@ footer span{display:inline-block;margin:0 .7em}
 .bar a{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:9px 6px;text-decoration:none;color:var(--ink);font-family:"Shippori Mincho",serif;font-weight:600;font-size:.88rem;line-height:1.4;letter-spacing:.04em}
 .bar a small{font-family:"Noto Sans JP",sans-serif;font-weight:400;font-size:.62rem;color:var(--mute)}
 .bar a+a{border-left:1px solid var(--line)}
-.bar a.main{background:var(--rose);color:#fff;border-left:0}
-.bar a.main small{color:#f3dfe4}
+.bar a.main{background:var(--pink);color:var(--ink);border-left:0}
+.bar a.main small{color:var(--sub)}
 
 /* reveal */
 .js .rv{opacity:0;transform:translateY(10px);transition:opacity .7s ease,transform .7s ease}
@@ -230,7 +230,7 @@ footer span{display:inline-block;margin:0 .7em}
   .band .box ul{grid-template-columns:1fr 1fr;column-gap:48px}
   .courses{grid-template-columns:repeat(3,1fr)}
   .flow{grid-template-columns:repeat(4,1fr);border-top:0;gap:24px}
-  .flow li{padding:56px 0 20px;border-bottom:0;border-top:1px solid var(--ink)}
+  .flow li{padding:56px 0 20px;border-bottom:0;border-top:1px solid var(--rose-l)}
   .flow li::before{top:14px}
   .two{display:grid;grid-template-columns:1fr 1fr;gap:20px}
 }
