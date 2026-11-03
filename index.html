@@ -100,20 +100,23 @@ strong,b{font-weight:700}
 .fv{position:relative;overflow:hidden;background:#fff;padding:0;min-height:620px;display:grid;grid-template-rows:1fr auto}
 .fv-brush{position:absolute;inset:0;width:100%;height:100%;z-index:0;pointer-events:none;opacity:.9}
 .fv-person{position:absolute;bottom:0;z-index:1;height:auto;pointer-events:none;user-select:none}
-.fv-left{left:-4%;width:52%;max-width:360px}
-.fv-right{right:-6%;width:56%;max-width:380px}
+.fv-right{left:50%;transform:translateX(-50%);width:58%;max-width:300px}
 .fv-text{position:relative;z-index:2;text-align:center;padding:36px 16px 0}
-.fv h1{font-family:var(--sans);font-weight:900;font-size:clamp(1.9rem,8.6vw,5.4rem);line-height:1.22;letter-spacing:.02em;color:var(--ink);text-shadow:0 0 18px #fff,0 0 36px #fff,0 2px 0 #fff;word-break:keep-all}
+.fv h1{font-family:var(--sans);font-weight:900;font-size:clamp(1.7rem,7.6vw,5.4rem);line-height:1.22;letter-spacing:.02em;color:var(--ink);text-shadow:0 0 18px #fff,0 0 36px #fff,0 2px 0 #fff;word-break:keep-all}
 .fv-sub{margin-top:18px;font-weight:900;font-size:clamp(.95rem,3.6vw,1.6rem);line-height:1.5;color:var(--ink);letter-spacing:.04em;text-shadow:0 0 14px #fff,0 0 28px #fff}
 .fv-name{display:inline-block;margin-top:16px;background:var(--ink);color:#fff;font-weight:900;font-size:clamp(1.05rem,4.2vw,2rem);letter-spacing:.06em;padding:8px 22px;line-height:1.4}
 .fv-cta{margin:18px auto 0;display:inline-flex}
 .fv .sp{display:inline}
 .fv-tab{display:none}
-.fv::after{content:"";grid-row:2;height:300px;pointer-events:none}
+.fv::after{content:"";grid-row:2;height:calc(min(58vw,300px) * 1.3);pointer-events:none}
 @media(min-width:760px){
   .fv{min-height:640px}
-  .fv-left{left:0;width:38%;max-width:520px}
-  .fv-right{right:0;width:40%;max-width:540px}
+  .fv-right{left:auto;right:3%;transform:none;width:34%;max-width:420px}
+  .fv-text{text-align:left;padding-left:40px;padding-right:42%}
+  .fv h1{font-size:clamp(2rem,4.8vw,3rem)}
+  .fv-sub{font-size:1.1rem}
+  .fv-name{font-size:1.3rem}
+  .fv-cta{margin-left:0}
   .fv-text{padding-top:56px}
   .fv .sp{display:none}
   .fv::after{height:0}
@@ -121,10 +124,9 @@ strong,b{font-weight:700}
 }
 @media(min-width:960px){
   .fv{min-height:calc(100svh - 68px);max-height:860px;grid-template-rows:1fr}
-  .fv-left{left:-3%;width:34%;max-width:560px}
-  .fv-right{right:2%;width:36%;max-width:600px}
-  .fv-text{padding:60px 120px 60px 120px;align-self:center}
-  .fv h1{font-size:clamp(2.6rem,4.6vw,4.5rem);line-height:1.25}
+  .fv-right{right:5%;width:30%;max-width:460px}
+  .fv-text{padding:60px 40% 60px 120px;align-self:center;text-align:left}
+  .fv h1{font-size:clamp(2.6rem,4.4vw,4.3rem);line-height:1.25}
   .fv-sub{font-size:1.35rem;margin-top:22px}
   .fv-name{margin-top:20px;font-size:1.7rem;padding:8px 26px}
   .fv-cta{display:none}
@@ -170,7 +172,7 @@ section{padding:88px 0;position:relative}
 /* staff（白・切り抜き人物） */
 .staff{display:grid;gap:24px;align-items:end}
 .staff-photo{position:relative;margin:0 auto;width:min(100%,360px);aspect-ratio:1;border-radius:20px;background:var(--red) var(--brush);background-size:600px 400px;overflow:hidden}
-.staff-photo img{position:absolute;left:50%;bottom:0;width:92%;transform:translateX(-50%)}
+.staff-photo img{position:absolute;left:50%;bottom:0;height:96%;width:auto;transform:translateX(-50%)}
 .staff .role{font-size:.86rem;font-weight:700;letter-spacing:.14em;color:var(--red)}
 .staff h3{font-family:var(--head);font-weight:400;font-size:2.2rem;letter-spacing:.1em;margin-top:4px}
 .cred{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 18px}
@@ -352,8 +354,7 @@ footer small{display:block;margin-top:14px;font-family:var(--en);letter-spacing:
 <path d="M1250 420 C 1400 380, 1500 350, 1700 320" stroke-width="42" opacity=".7"/>
 </g>
 </svg>
-<img class="fv-person fv-left" src="images/fv-client.webp" alt="" width="900" height="1267" fetchpriority="high">
-<img class="fv-person fv-right" src="images/fv-ryoka.webp" alt="担当のRyoka（看護師）" width="915" height="866" fetchpriority="high">
+<img class="fv-person fv-right" src="images/fv-ryoka.webp" alt="担当のRyoka（看護師）" width="900" height="1244" fetchpriority="high">
 <div class="fv-text">
 <h1 id="h1">名古屋・金山・栄で<br>極上の<br class="sp">ドライヘッドスパを！</h1>
 <p class="fv-sub">看護師が行う、完全個室の<br class="sp">ドライヘッドスパ</p>
@@ -389,7 +390,7 @@ footer small{display:block;margin-top:14px;font-family:var(--en);letter-spacing:
 <section id="staff">
 <div class="wrap">
 <div class="staff">
-<div class="staff-photo"><img src="images/fv-ryoka.webp" alt="担当のRyoka" width="915" height="866" loading="lazy"></div>
+<div class="staff-photo"><img src="images/fv-ryoka.webp" alt="担当のRyoka" width="900" height="1244" loading="lazy"></div>
 <div>
 <p class="role">担当 ／ 看護師</p>
 <h3>Ryoka</h3>
