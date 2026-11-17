@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Webカウンセリングシート｜名古屋のドライヘッドスパ</title>
+<meta name="description" content="ご来店前にご記入いただくカウンセリングシートです。ご記入内容はLINEで送っていただきます。">
+<meta name="robots" content="noindex,follow">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23e0306e'/%3E%3Cpath d='M20 38c4-10 20-10 24 0' fill='none' stroke='white' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+/* ====== tokens（トップページと同じ） ====== */
+:root{
+  color-scheme:light;
+  --ink:#1a1919;
+  --ink-2:#3a3838;
+  --mute:#777;
+  --line:#e6e6e6;
+  --soft:#faf6f7;
+  --red:#e0306e;
+  --red-deep:#b8225a;
+  --line-green:#06c755;
+  --gutter:clamp(20px,4vw,48px);
+  --head:"Dela Gothic One","Noto Sans JP","Hiragino Sans",sans-serif;
+  --sans:"Noto Sans JP","Hiragino Kaku Gothic ProN","Hiragino Sans",Meiryo,sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{background:#fff}
+body{margin:0;background:#fff;color:var(--ink);font:400 15.5px/1.9 var(--sans);-webkit-font-smoothing:antialiased;letter-spacing:.02em}
+h1,h2{margin:0;line-height:1.4;word-break:auto-phrase;text-wrap:balance}
+p{margin:0}
+a{color:var(--red)}
+:focus-visible{outline:2px solid var(--red);outline-offset:3px}
+.wrap{max-width:760px;margin:0 auto;padding:0 var(--gutter)}
+.note{font-size:.84rem;color:var(--mute);line-height:1.9}
+
+/* header */
+.top{position:sticky;top:0;z-index:40;background:#fff;border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px)}
+.top .wrap{display:flex;align-items:center;height:60px;max-width:1120px}
+.brand{text-decoration:none;color:var(--ink);font-family:var(--head);font-size:1.1rem;letter-spacing:.04em;white-space:nowrap}
+
+/* title */
+.title{padding:48px 0 8px;text-align:center}
+.title .en{display:block;color:var(--red);font-weight:900;font-size:.78rem;letter-spacing:.24em}
+.title h1{font-family:var(--head);font-weight:400;font-size:clamp(1.6rem,6vw,2.4rem);letter-spacing:.04em;margin-top:6px}
+.title p{margin-top:18px;color:var(--ink-2);font-size:.94rem;text-align:left}
+
+/* form */
+form{padding:28px 0 64px}
+fieldset{border:0;margin:0 0 20px;padding:24px 22px;background:var(--soft);border-radius:14px}
+legend{float:left;width:100%;padding:0;margin-bottom:14px;font-weight:900;font-size:1.08rem;color:var(--red);letter-spacing:.04em}
+legend+*{clear:both}
+.field{display:grid;gap:8px}
+.field+.field,.field+.two,.two+.field{margin-top:20px}
+.label{font-weight:700;font-size:.95rem}
+.req,.opt{display:inline-block;margin-left:8px;padding:0 7px;border-radius:3px;font-size:.7rem;font-weight:700;letter-spacing:.06em;vertical-align:2px;line-height:1.7}
+.req{background:var(--red);color:#fff}
+.opt{background:#fff;color:var(--mute);border:1px solid var(--line)}
+.hint{font-size:.8rem;color:var(--mute);line-height:1.7}
+input[type=text],input[type=date],select,textarea{width:100%;font:inherit;font-size:16px;color:var(--ink);background:#fff;border:1px solid #d8d2d4;border-radius:6px;padding:11px 12px;min-height:48px}
+textarea{min-height:96px;resize:vertical;line-height:1.7}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--red);outline-offset:0;border-color:transparent}
+.choices{display:flex;flex-wrap:wrap;gap:8px}
+.choices.col{flex-direction:column}
+.choice{position:relative}
+.choice input{position:absolute;opacity:0;inset:0;margin:0;cursor:pointer}
+.choice span{display:flex;align-items:center;gap:10px;min-height:44px;padding:8px 14px;background:#fff;border:1px solid #d8d2d4;border-radius:6px;font-size:.92rem;line-height:1.5;cursor:pointer}
+.choice span::before{content:"";flex:none;width:18px;height:18px;border:1.5px solid #bbb;background:#fff}
+.choice input[type=radio]+span::before{border-radius:50%}
+.choice input[type=checkbox]+span::before{border-radius:3px}
+.choice input:checked+span{border-color:var(--red);background:#fff0f5;font-weight:700}
+.choice input:checked+span::before{border-color:var(--red);background:var(--red);box-shadow:inset 0 0 0 3px #fff}
+.choice input:focus-visible+span{outline:2px solid var(--red);outline-offset:2px}
+.field.error .label{color:var(--red-deep)}
+.field.error input,.field.error select,.field.error .choice span{border-color:var(--red)}
+.err{display:none;color:var(--red-deep);font-size:.82rem;font-weight:700}
+.field.error .err{display:block}
+
+.agree ul{margin:0 0 16px;padding-left:1.2em;font-size:.9rem;color:var(--ink-2)}
+.agree li+li{margin-top:6px}
+
+.btn{display:flex;align-items:center;justify-content:center;gap:12px;width:100%;min-height:60px;padding:0 24px;border-radius:5px;background:var(--line-green);color:#fff;font:900 1.05rem var(--sans);letter-spacing:.08em;border:0;cursor:pointer;text-decoration:none}
+.btn:hover{background:#05b24c}
+.btn.sub{background:#fff;color:var(--ink);border:1px solid var(--ink);min-height:48px;font-size:.92rem;font-weight:700}
+.btn.sub:hover{background:var(--soft)}
+.send{margin-top:28px;display:grid;gap:12px}
+.send .note{text-align:center}
+#summary{display:none;margin-top:8px}
+#summary.on{display:block}
+#summary pre{white-space:pre-wrap;word-break:break-all;background:#fff;border:1px solid var(--line);border-radius:8px;padding:14px;font:400 .86rem/1.8 var(--sans);margin:8px 0 12px;max-height:320px;overflow:auto}
+
+footer{background:var(--ink);color:rgba(255,255,255,.8);padding:28px 0;text-align:center;font-size:.8rem;letter-spacing:.08em}
+footer a{color:#fff}
+@media (min-width:768px){
+  fieldset{padding:28px 32px}
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+  .two .field+.field{margin-top:0}
+}
+</style>
+</head>
+<body>
+
+<header class="top"><div class="wrap"><a class="brand" href="./">名古屋のドライヘッドスパ</a></div></header>
+
+<main class="wrap">
+<div class="title">
+<span class="en">COUNSELING SHEET</span>
+<h1>Webカウンセリングシート</h1>
+<p>ご予約が決まったら、ご来店の前日までにご記入ください。最後のボタンを押すと、ご記入内容が入った状態でLINEのトーク画面が開きます。そのまま送信してください。当日は、この内容をもとに体調やご希望を伺います。</p>
+</div>
+
+<form id="sheet" novalidate>
+
+<fieldset>
+<legend>ご予約について</legend>
+<div class="field" data-req>
+<label class="label" for="name">お名前<span class="req">必須</span></label>
+<input type="text" id="name" name="お名前" autocomplete="name" placeholder="例：名古屋 花子">
+<p class="err">お名前を入力してください</p>
+</div>
+<div class="two">
+<div class="field" data-req>
+<label class="label" for="date">ご予約日<span class="req">必須</span></label>
+<input type="date" id="date" name="ご予約日">
+<p class="err">ご予約日を選んでください</p>
+</div>
+<div class="field" data-req>
+<label class="label" for="place">場所<span class="req">必須</span></label>
+<select id="place" name="場所"><option value="">選んでください</option><option>名古屋駅</option><option>栄</option><option>金山</option></select>
+<p class="err">場所を選んでください</p>
+</div>
+</div>
+<div class="field" data-req>
+<span class="label" id="l-course">コース<span class="req">必須</span></span>
+<div class="choices" role="radiogroup" aria-labelledby="l-course">
+<label class="choice"><input type="radio" name="コース" value="60分"><span>60分</span></label>
+<label class="choice"><input type="radio" name="コース" value="90分"><span>90分</span></label>
+<label class="choice"><input type="radio" name="コース" value="120分"><span>120分</span></label>
+<label class="choice"><input type="radio" name="コース" value="当日相談"><span>当日相談したい</span></label>
+</div>
+<p class="err">コースを選んでください</p>
+</div>
+<div class="field">
+<span class="label" id="l-opt">オプション<span class="opt">任意</span></span>
+<div class="choices" aria-labelledby="l-opt">
+<label class="choice"><input type="radio" name="ハンドリフレ" value="ハンドリフレ10分"><span>ハンドリフレ 10分</span></label>
+<label class="choice"><input type="radio" name="ハンドリフレ" value="ハンドリフレ20分"><span>ハンドリフレ 20分</span></label>
+<label class="choice"><input type="checkbox" name="オプション" value="ホットアイマスク"><span>ホットアイマスク</span></label>
+</div>
+</div>
+</fieldset>
+
+<fieldset>
+<legend>お客様について</legend>
+<div class="two">
+<div class="field" data-req>
+<label class="label" for="age">年代<span class="req">必須</span></label>
+<select id="age" name="年代"><option value="">選んでください</option><option>10代</option><option>20代</option><option>30代</option><option>40代</option><option>50代</option><option>60代</option><option>70代以上</option></select>
+<p class="err">年代を選んでください</p>
+</div>
+<div class="field" data-req>
+<label class="label" for="sex">性別<span class="req">必須</span></label>
+<select id="sex" name="性別"><option value="">選んでください</option><option>女性</option><option>男性</option><option>回答しない</option></select>
+<p class="hint">男性のお客様は、当日に身分証明書のご提示をお願いしています。</p>
+<p class="err">性別を選んでください</p>
+</div>
+</div>
+<div class="field" data-req>
+<span class="label" id="l-exp">ドライヘッドスパのご経験<span class="req">必須</span></span>
+<div class="choices" role="radiogroup" aria-labelledby="l-exp">
+<label class="choice"><input type="radio" name="ご経験" value="はじめて"><span>はじめて</span></label>
+<label class="choice"><input type="radio" name="ご経験" value="受けたことがある"><span>受けたことがある</span></label>
+<label class="choice"><input type="radio" name="ご経験" value="当店で受けたことがある"><span>当店で受けたことがある</span></label>
+</div>
+<p class="err">どれか一つ選んでください</p>
+</div>
+</fieldset>
+
+<fieldset>
+<legend>体調について</legend>
+<div class="field" data-req>
+<span class="label" id="l-health">当てはまるものをすべて選んでください<span class="req">必須</span></span>
+<div class="choices col" aria-labelledby="l-health">
+<label class="choice"><input type="checkbox" name="体調" value="とくになし" data-none><span>とくになし</span></label>
+<label class="choice"><input type="checkbox" name="体調" value="妊娠中、または妊娠の可能性がある"><span>妊娠中、または妊娠の可能性がある</span></label>
+<label class="choice"><input type="checkbox" name="体調" value="通院中の病気がある"><span>通院中の病気がある</span></label>
+<label class="choice"><input type="checkbox" name="体調" value="毎日飲んでいるお薬がある"><span>毎日飲んでいるお薬がある</span></label>
+<label class="choice"><input type="checkbox" name="体調" value="血圧が高い・低いと言われている"><span>血圧が高い・低いと言われている</span></label>
+<label class="choice"><input type="checkbox" name="体調" value="頭・首・肩・腕に、けがや手術の経験がある"><span>頭・首・肩・腕に、けがや手術の経験がある</span></label>
+<label class="choice"><input type="checkbox" name="体調" value="頭皮や肌に、傷・湿疹・かぶれがある"><span>頭皮や肌に、傷・湿疹・かぶれがある</span></label>
+<label class="choice"><input type="checkbox" name="体調" value="肌が敏感・かぶれやすい"><span>肌が敏感・かぶれやすい</span></label>
+<label class="choice"><input type="checkbox" name="体調" value="首や肩を動かすとつらいことがある"><span>首や肩を動かすとつらいことがある</span></label>
+<label class="choice"><input type="checkbox" name="体調" value="あおむけで長く横になるのがつらい"><span>あおむけで長く横になるのがつらい</span></label>
+</div>
+<p class="err">当てはまるものがなければ「とくになし」を選んでください</p>
+</div>
+<div class="field">
+<label class="label" for="detail">くわしく教えてください<span class="opt">任意</span></label>
+<textarea id="detail" name="体調のくわしい内容" placeholder="例：〇〇で通院中、△△を毎日飲んでいる、いつ頃けがをした など"></textarea>
+<p class="hint">内容によっては、日を改めていただいたり、かかりつけの病院への確認をお願いしたりすることがあります。</p>
+</div>
+</fieldset>
+
+<fieldset>
+<legend>ご希望について</legend>
+<div class="field">
+<span class="label" id="l-press">力加減の好み<span class="opt">任意</span></span>
+<div class="choices" role="radiogroup" aria-labelledby="l-press">
+<label class="choice"><input type="radio" name="力加減" value="やさしめ"><span>やさしめ</span></label>
+<label class="choice"><input type="radio" name="力加減" value="ふつう"><span>ふつう</span></label>
+<label class="choice"><input type="radio" name="力加減" value="しっかりめ"><span>しっかりめ</span></label>
+<label class="choice"><input type="radio" name="力加減" value="おまかせ"><span>おまかせ</span></label>
+</div>
+</div>
+<div class="field">
+<span class="label" id="l-talk">施術中の会話<span class="opt">任意</span></span>
+<div class="choices" role="radiogroup" aria-labelledby="l-talk">
+<label class="choice"><input type="radio" name="会話" value="静かに休みたい"><span>静かに休みたい</span></label>
+<label class="choice"><input type="radio" name="会話" value="少し話したい"><span>少し話したい</span></label>
+<label class="choice"><input type="radio" name="会話" value="おまかせ"><span>おまかせ</span></label>
+</div>
+</div>
+<div class="field">
+<span class="label" id="l-focus">とくにゆっくり触れてほしいところ<span class="opt">任意</span></span>
+<div class="choices" aria-labelledby="l-focus">
+<label class="choice"><input type="checkbox" name="ゆっくり触れてほしいところ" value="頭"><span>頭</span></label>
+<label class="choice"><input type="checkbox" name="ゆっくり触れてほしいところ" value="首"><span>首</span></label>
+<label class="choice"><input type="checkbox" name="ゆっくり触れてほしいところ" value="肩・デコルテ"><span>肩・デコルテ</span></label>
+<label class="choice"><input type="checkbox" name="ゆっくり触れてほしいところ" value="顔・耳"><span>顔・耳</span></label>
+<label class="choice"><input type="checkbox" name="ゆっくり触れてほしいところ" value="目元"><span>目元</span></label>
+<label class="choice"><input type="checkbox" name="ゆっくり触れてほしいところ" value="手・腕"><span>手・腕</span></label>
+</div>
+</div>
+<div class="field">
+<label class="label" for="avoid">触れてほしくないところ<span class="opt">任意</span></label>
+<input type="text" id="avoid" name="触れてほしくないところ" placeholder="例：耳のまわり、顔（メイクを崩したくない）">
+</div>
+<div class="field">
+<label class="label" for="other">そのほか、気になることやご要望<span class="opt">任意</span></label>
+<textarea id="other" name="ご要望" placeholder="例：終わったあとに予定がある、髪型を崩したくない など"></textarea>
+</div>
+</fieldset>
+
+<fieldset class="agree">
+<legend>ご確認ください</legend>
+<ul>
+<li>当店のドライヘッドスパはリラクゼーションを目的としたもので、医療行為や診断は行いません。</li>
+<li>当日の体調によっては、施術をお断りしたり、内容を変えたりすることがあります。こちらからお断りした場合は、お支払いいただいた料金をご返金します。</li>
+<li>お支払いは当日、施術の前にお願いしています（現金、またはSquareのキャッシュレス決済）。</li>
+<li>キャンセルは、ご予約日の2日前の20:00までは無料です。それ以降から前日までは料金の30%、当日やご連絡のないキャンセルは料金の100%をいただきます。日程の変更はキャンセルになりません。</li>
+<li>ご記入内容は、施術のためだけに使います。このページには保存されず、LINEのトークで当店に届きます。</li>
+</ul>
+<div class="field" data-req>
+<div class="choices">
+<label class="choice"><input type="checkbox" name="同意" value="確認しました" id="agree"><span>上記を確認しました<span class="req">必須</span></span></label>
+</div>
+<p class="err">内容をご確認のうえ、チェックを入れてください</p>
+</div>
+</fieldset>
+
+<div class="send">
+<button type="submit" class="btn">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3C6.5 3 2 6.6 2 11c0 3.9 3.5 7.2 8.3 7.9.3.1.8.2.9.5.1.3.1.7 0 .9l-.1.9c0 .3-.2 1 .9.6s5.8-3.4 7.9-5.9C21.3 14.3 22 12.7 22 11c0-4.4-4.5-8-10-8Z"/></svg>
+LINEで送る</button>
+<p class="note">LINEが開いたら、そのまま送信ボタンを押してください。</p>
+<div id="summary" aria-live="polite">
+<p class="note">LINEが開かないときは、下の内容をコピーして、LINEのトークに貼り付けて送ってください。</p>
+<pre id="text"></pre>
+<button type="button" class="btn sub" id="copy">内容をコピーする</button>
+<a class="btn sub" href="https://lin.ee/qxIkHOR" target="_blank" rel="noopener" style="margin-top:12px">LINEのトークを開く</a>
+</div>
+</div>
+
+</form>
+</main>
+
+<footer><div class="wrap"><a href="./">名古屋のドライヘッドスパ トップへ</a></div></footer>
+
+<script>
+(()=>{
+  const LINE_ID='@489ksofq';
+  const f=document.getElementById('sheet');
+  const val=n=>[...f.querySelectorAll(`[name="${n}"]`)].filter(e=>!(e.type==='radio'||e.type==='checkbox')||e.checked).map(e=>e.value.trim()).filter(Boolean).join('、');
+
+  // 「とくになし」と他の項目は同時に選べない
+  const health=[...f.querySelectorAll('[name="体調"]')];
+  health.forEach(c=>c.addEventListener('change',()=>{
+    if(!c.checked)return;
+    health.forEach(o=>{if(o!==c&&(c.hasAttribute('data-none')||o.hasAttribute('data-none')))o.checked=false});
+  }));
+
+  // 入力したらエラー表示を消す
+  f.addEventListener('input',e=>e.target.closest('.field')?.classList.remove('error'));
+  f.addEventListener('change',e=>e.target.closest('.field')?.classList.remove('error'));
+
+  const fmtDate=v=>{if(!v)return'';const[y,m,d]=v.split('-').map(Number);const w='日月火水木金土'[new Date(y,m-1,d).getDay()];return`${y}年${m}月${d}日（${w}）`};
+
+  f.addEventListener('submit',e=>{
+    e.preventDefault();
+    let first=null;
+    f.querySelectorAll('[data-req]').forEach(box=>{
+      const ok=[...box.querySelectorAll('input,select,textarea')].some(el=>(el.type==='radio'||el.type==='checkbox')?el.checked:el.value.trim()!=='');
+      box.classList.toggle('error',!ok);
+      if(!ok&&!first)first=box;
+    });
+    if(first){first.scrollIntoView({behavior:'smooth',block:'center'});first.querySelector('input,select,textarea')?.focus({preventScroll:true});return}
+
+    const opts=[val('ハンドリフレ'),val('オプション')].filter(Boolean).join('、')||'なし';
+    const lines=[
+      '【カウンセリングシート】',
+      `お名前：${val('お名前')}`,
+      `ご予約日：${fmtDate(f.date.value)}`,
+      `場所：${val('場所')}`,
+      `コース：${val('コース')}`,
+      `オプション：${opts}`,
+      `年代・性別：${val('年代')}・${val('性別')}`,
+      `ドライヘッドスパのご経験：${val('ご経験')}`,
+      `体調：${val('体調')}`,
+      `体調のくわしい内容：${val('体調のくわしい内容')||'なし'}`,
+      `力加減：${val('力加減')||'未記入'}`,
+      `会話：${val('会話')||'未記入'}`,
+      `ゆっくり触れてほしいところ：${val('ゆっくり触れてほしいところ')||'未記入'}`,
+      `触れてほしくないところ：${val('触れてほしくないところ')||'なし'}`,
+      `ご要望：${val('ご要望')||'なし'}`,
+      'ご確認事項：確認しました'
+    ];
+    const text=lines.join('\n');
+    document.getElementById('text').textContent=text;
+    document.getElementById('summary').classList.add('on');
+    location.href=`https://line.me/R/oaMessage/${encodeURIComponent(LINE_ID)}/?${encodeURIComponent(text)}`;
+  });
+
+  document.getElementById('copy').addEventListener('click',async e=>{
+    const b=e.currentTarget,t=document.getElementById('text').textContent;
+    try{await navigator.clipboard.writeText(t)}catch{
+      const r=document.createRange();r.selectNodeContents(document.getElementById('text'));const s=getSelection();s.removeAllRanges();s.addRange(r);document.execCommand('copy');s.removeAllRanges();
+    }
+    b.textContent='コピーしました';setTimeout(()=>b.textContent='内容をコピーする',2000);
+  });
+})();
+</script>
+</body>
+</html>
